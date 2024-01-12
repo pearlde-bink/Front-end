@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --r: 255;
+    --g: 0;
+    --b:0;
+    --text-color: rgb(var(--r), var(--g), var(--b));
+    --shadow1:0 12px 16px 0 rgba(0, 0, 0, 0.24);
+    --shadow2:0 17px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+.ulist > li, a{
+    display: block;
+    padding: 5px;
+    min-width: 50px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    /* color: rgb(255, 215, 215); */
+    color: var(--text-color);
+}
+li a:hover{
+    background-color: rgb(52, 52, 136);
+    color: white;
+    opacity: 0.8;
+}
+
+.ulist{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.olist{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    padding: 10px;
+    margin: 5px;;
+    flex-direction: row;
+    justify-content:left;
+    box-sizing: border-box;
+}
+.olist > li{
+    width: 200px;
+    padding: 30px;
+    margin: 10px;
+    /* border: 5px dotted red; */
+    box-sizing: border-box;
+    font-size: larger;
+}
+
+#divBe4Header{
+    border: 5px dashed black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* align-content: center; */
+}
+
+table, th, td{
+    border: 1px solid gray;
+}
+
+tr > td{
+    text-align: center;
+}
+
+section{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+article#all{
+    text-transform: capitalize;
+
+}
+
+#divForm{
+    flex-direction: column;
+}
+
+.button{
+    display: inline-block;
+    transition: 0.8s;
+    background-color: #AAA;
+    /* color:#3587A4; */
+    color: var(--text-color);
+    padding: 16px 32px;
+    border: none;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: not-allowed;
+    border-radius: 10px;
+    min-width: 120px;
+}
+.button1{
+    margin: 5px;
+    background-color: white;
+    /* color: green; */
+    --text-color: green;
+    color: var(--text-color);
+    border: 2px solid green;
+}
+.button1:hover{
+    background-color: rgb(50, 244, 73);
+    color: white;
+    box-shadow: var(--shadow1), var(--shadow2);
+}
+.button2{
+    margin: 5px;
+    background-color: white;
+    color: rgb(199, 217, 35);
+    border: 2px solid yellow;
+}
+.button2:hover{
+    background-color: rgb(192, 209, 40);
+    color: white;
+    box-shadow: var(--shadow1), var(--shadow2);
+}
+.button3{
+    margin: 5px;
+    background-color: white;
+    color: rgb(255, 154, 38);
+    border: 2px solid orange;
+}
+.button3:hover{
+    background-color: rgb(255, 154, 38);
+    color: white;
+    box-shadow: var(--shadow1), var(--shadow2);
+}
+.button4{
+    margin: 5px;
+    background-color: white;
+    color: rgb(255, 25, 25);
+    border: 2px solid red;
+}
+.button4:hover{
+    background-color: rgb(255, 25, 25);
+    color: white;
+    box-shadow: var(--shadow1), var(--shadow2);
+}
+.button5{
+    margin: 5px;
+    background-color: white;
+    color: rgb(252, 27, 214);
+    border: 2px solid rgb(253, 69, 234);
+}
+.button5:hover{
+    background-color: rgb(252, 27, 214);
+    color: white;
+    box-shadow: var(--shadow1), var(--shadow2);
+}
+
+.bgDiv{
+    width: 100%;
+    background-image: linear-gradient(
+                            rgba(255, 39, 39, 0.5),
+                            rgb(255 255 0/50%),
+                            rgb(0 0 255 / 50%))
+                            ,url("https://shorturl.at/eghi3");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: scroll;
+    /* background-size: 200px; */
+}
+.first {
+    background-color: rgb(207, 72, 27);
+    opacity: 0.2;
+}
+
+.second {
+    background-color: rgb(207, 72, 27);
+    opacity: 0.4;
+}
+.third {
+    background-color: rgb(207, 72, 27);
+    opacity: 0.6;
+}
+.forth {
+    background-color: rgb(207, 72, 27);
+    opacity: 0.8;
+}
+.fifth {
+    background-color: rgb(207, 72, 27);
+    opacity: 1;
+}
+
+.birdDiv{
+    height: 100px;
+
+}
+.bird{
+    float: right;
+}
+
+.floatAtt{
+    float: left;
+}
+.clearAtt{
+    clear: left;
+}
+
+.tabintab{
+    border: 2px;
+}
+

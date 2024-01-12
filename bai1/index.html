@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tuan Binh">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="description" content="learning">
+    <!-- <meta http-equiv="refresh" content="60;https://www.w3schools.com/"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Buoi 1</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="towel.png">
+    <script src="bai1/ref.js"></script>
+
+    <style>
+        #all {
+            background-color: rgb(207, 140, 58);
+            margin: 0px;
+            padding: 2px;
+        }
+
+        #all>h2,
+        .aSub {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .aSub {
+            background-color: white;
+        }
+
+        .aSub>h4,
+        p {
+            margin: 10px;
+            font-style: italic;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Biggest heading</h1>
+    <p>There're 6 heading tags</p>
+    <main>
+        <div id="divBe4Header">
+            <img src="towel.png" alt="towel pic" style="height: 300px;">
+            <audio controls>
+                <source src="chick.mp3" type="audio/mpeg"> Source error
+            </audio>
+            <iframe src="https://www.britannica.com/place/" frameborder="0"
+                style="width: 500px; height: 200px;"></iframe>
+            <video width="320px" height="240px" controls muted>
+                <source src="https://youtu.be/itVb7Dfsfrg?si=4nMOvbuUvY-UsAfu" type="video/mp4"> Error
+            </video>
+        </div>
+        <header>
+            <h2 title="this is p tag">About Poland</h2>
+        </header>
+        <section>
+            <nav>
+                <ul class="ulist">
+                    <li><a href="https://www.britannica.com/place/Poland">POL</a></li>
+                    <li><a href="https://www.britannica.com/place/China">CHI</a></li>
+                    <li><a href="https://www.britannica.com/place/Japan">JAP</a></li>
+                    <li><a href="https://www.britannica.com/place/England">ENG</a></li>
+                </ul>
+            </nav>
+
+            <div style="width: 100%;">
+                <ol class="olist">
+                    <li>
+                        <p><samp>File not found</samp></p>
+                    </li>
+                    <li>
+                        <p><samp></samp>Press F1 to continue</samp></p>
+                    </li>
+                    <li>
+                        <p><samp>File not continue</samp></p>
+                    </li>
+                </ol>
+            </div>
+
+            <div>
+                <dl>Even at a time of national crisis: </dl>
+                <dd>however, <span style="color: red; font-size: larger;">Polish culture</span> remained strong; indeed,
+                    it even flourished</dd>
+                <dl><span style="color: rgb(147, 29, 197); font-size: larger;">Polish revolutionary</span> ideals:</dl>
+                <dd>if sometimes far from home. carried by such distinguished patriots.</dd>
+            </div>
+            <br>
+            <br>
+            <article id="all">
+                <h2 style="text-decoration: underline wavy black 2px;">Please confirm your email address</h2>
+                <article class="aSub" style="word-spacing: 10px; 
+                                            text-align: left; 
+                                            text-indent: 30px; 
+                                            font-weight: bold;
+                                            font-size: 20px;">
+                    <h4>Verification codes expire after 48 hours.</h4>
+                    <p>So you've decided to join Ultimate-Guitar.com, the most badass musical community in the world.
+                        It’s awesome!</p>
+                </article>
+                <article class="aSub" style="letter-spacing: 3px; text-align: center; font-weight: lighter;">
+                    <h4>Verification codes expire after 48 hours.</h4>
+                    <p>It looks like you already know what to do here, if not – start with verifying your email address,
+                        then go to the website and discover new tabs, lessons, news and reviews.</p>
+                </article>
+                <article class="aSub" style="line-height: 150%; text-align: right; text-indent: 40%; font-size:larger">
+                    <h4>Verification codes expire after 48 hours.</h4>
+                    <p>If this link isn’t working, just email to support-registration@ultimate-guitar.com. These guys
+                        always know what to do.</p>
+                </article>
+            </article>
+
+            <div style=" white-space: wrap; font-family: 'Lucida Sans'; overflow: visible;">
+                <p>In the late 1970s, beginning in the shipyards of Gdańsk, those workers formed a nationwide movement
+                    called Solidarity (Solidarność). Despite the arrest of Solidarity’s leadership, its newspapers kept
+                    publishing, spreading its values and agenda throughout the country. </p>
+            </div>
+        </section>
+        <!-- <br> -->
+        <section>
+            <table style="width: 80%;">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Site</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vic</td>
+                    <td>Hell</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>To</td>
+                    <td>Heaven</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ry</td>
+                    <td>Surface</td>
+                </tr>
+
+            </table>
+        </section>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <div id="divForm" style="display: flex">
+            <div>
+                <form id="submitForm" method="post">
+                    <label>Name:</label>
+                    <input type="text" id="name" name="name"> <br> <br>
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="address"> <br><br>
+
+                    <label for="chi">China</label>
+                    <input type="radio" id="chi" name="country" value="China">
+                    <label for="en">England</label>
+                    <input type="radio" id="en" name="country" value="England">
+                    <label for="usa">USA</label>
+                    <input type="radio" id="usa" name="country" value="USA"> <br> <br>
+
+                    <input class="formBut" type="button" value="Submit">
+                    <!-- <button></button> -->
+                </form>
+            </div>
+
+            <br>
+            <div>
+                <button class="button button1">Green</button>
+                <button class="button button2">Yellow</button>
+                <button class="button button3">Orange</button>
+                <button class="button button4">Red</button>
+                <button class="button button5">Pink</button>
+            </div>
+        </div>
+        <br>
+        <div class="bgDiv">
+            <div class="first">
+                <h3>Background-color</h3>
+            </div>
+            <div class="second">
+                <h3>Background-repeat</h3>
+            </div>
+            <div class="third">
+                <h3>Background-size</h3>
+            </div>
+            <div class="forth">
+                <h3>Background-position</h3>
+            </div>
+            <div class="fifth">
+                <h3>Background-image</h3>
+            </div>
+
+        </div>
+        <div class="birdDiv">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum,
+                nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+                congue eget, auctor vitae massa. <img class="bird"
+                    src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/305874191/1800" alt="Pineapple"
+                    style="width:100px;height:100px;margin-left:15px;">Fusce luctus vestibulum augue ut aliquet. Mauris
+                ante ligula, facilisis
+                sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Nunc sagittis dictum nisi, sed
+                ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+                dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.Praesent convallis urna a lacus interdum ut
+                hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Nunc sagittis dictum nisi, sed
+                ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+                dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                nibh tempor porta. Cras ac leo purus. Mauris quis diam velit</p>
+        </div>
+        <hr>
+        <hr>
+        <div style="border: 1px dashed red; padding: 10px">
+            <div class="floatAtt">
+                <img src="https://news.harvard.edu/wp-content/uploads/2023/11/dog_brains_2500.jpg" alt="dog"
+                    style="width:80px;height:80px;margin-left:15px;">
+            </div>
+            <p class="clearAtt">In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+                dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.Praesent convallis urna a lacus interdum ut
+                hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Nunc sagittis dictum nisi, sed
+                ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+                dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                nibh tempor porta. Cras ac leo purus. Mauris quis diam velitPraesent convallis urna a lacus interdum ut
+                hendrerit risus congue.
+                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. Nunc sagittis dictum nisi, sed
+                ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae
+                dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar
+                nibh tempor porta. Cras ac leo purus. Mauris quis diam velit</p>
+        </div>
+        <br><br>
+
+        <table id="'tb2" style="width: 80%; height: 200px">
+            <tr>
+                <th></th>
+                <th></th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <table class="tabintab" style="width: 100%; height: 100%;">
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+
+        <footer>
+            <h2 style="color:brown; font-size: 30px; font-family:Verdana;">The end.</h2>
+        </footer>
+    </main>
+
+    <script>
+        document.querySelector(".formBut").addEventListener("click", function () {
+            document.getElementById("name").value = "";
+            document.getElementById("address").value = "";
+        });
+    </script>
+</body>
+
+</html>
