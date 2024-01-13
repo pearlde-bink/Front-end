@@ -8,6 +8,12 @@ html {
     box-sizing: inherit;
 } */
 
+body{
+    padding: 0;
+    margin: 0;
+    padding-left: 8px;
+}
+
 a {
     text-decoration: none;
 }
@@ -16,6 +22,8 @@ a {
     --width: 1400px;
     --orangeColor: rgb(255, 109, 28);
     --rowColor: rgb(255, 235, 235);
+    --fontFam: 'Josefin Sans',sans-serif;
+    /* --fontFamBol:  */
 }
 
 #all{
@@ -38,7 +46,7 @@ a {
     align-items: center;
     text-align: center;
     padding-right: 147px;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
     height: 45px;
     width: var(--width);
@@ -46,6 +54,24 @@ a {
 }
 .container{
     padding: 0px 9px 0px 9px;
+}
+
+.f{
+    background: url('../images/f.png') no-repeat;
+    width: 11px;
+    height: 26px;
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.g{
+    background: url('../images/g+.png') no-repeat;
+    width: 10px;
+    height: 25px;
+    position: relative;
+    top: 1px;
+    left: 3px;
 }
 
 .camBong{
@@ -56,7 +82,6 @@ a {
     text-align: center;
     width: 100%;
     height: 800px;
-    top: 100px;
     /* display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,8 +93,8 @@ a {
 }
 .triangle{
     position: absolute;
-    top: 4px;
-    right: 6px;
+    top: 3px;
+    right: 4.8px;
     border-left: 8px solid white;
     border-top: 4px solid transparent;
     border-bottom: 4px solid transparent;
@@ -126,6 +151,7 @@ header{
     position: relative;
     margin: 22px;
     min-width: auto;
+    text-transform: uppercase;
 }
 
 .ulist > li, a{
@@ -135,16 +161,17 @@ header{
     width: auto;
     color: black;
     /* padding: 7px; */
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: bold;
     box-sizing: border-box;
 }
 
-li a:hover{
+li > a:hover{
     color: rgb(255, 109, 28);
 }
-li a:hover::after {
+li > a:hover::after {
     content: '';
     display: block;
     position: absolute;
@@ -169,49 +196,60 @@ li a:hover::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    position: relative;
-    top: -75px;
-    right: -5px;
+    height: auto;
+    position: absolute;
+    top: -15px;
+    /* right: -5px; */
 }
 
 .spl1{
     position: relative;
-    top:calc(50% + 90px);
+    top: 185px;
     right: -calc(100px + 105px);
-    transform: rotate(-7deg);
+    transform: rotate(-6deg);
 }
 .spl2{
-    position: absolute;
-    right: -calc(280px + 220px);
-    top: calc(41% + 240px);
+    position: relative;
+    right: -12px;
+    top: 159px;
 }
 
 .spl3{
-    position: absolute;
+    position: relative;
     bottom: 32%;
-    opacity: 0.9;
-    right: calc(115px + 40px);
-    top: calc(39% + 240px);
+    opacity: 0.8;
+    right: -195px;
+    top: -71px;
     /* transform: translate(-5px, 10px); */
 }
 
 .btc{
-    position: absolute;
-    top: 60%;
-    left: 295px;
+    position: relative;
+    top: 51%;
+    left: -8px;
     display: flex;
     justify-content: space-around;
+}
+
+.btc > p {
+    font-weight: bolder; 
+    font-size: 19px; 
+    font-family: var(--fontFam); 
+    text-align: center;
+    position: relative;
+    top: 10px;
+    left: -20px;
+    text-decoration: underline;
 }
 
 .blogo{
     background-color: #fff;
     display: inline-block;
     width: 145px;
-    height: 70px;
+    height: 66px;
     margin: 5px;
     background: #fff url("../images/LOGO-BYTESOFT.png") no-repeat 50% 50%;
-    background-size: contain;
+    background-size: 120px;
     margin-left: 10px;
 }
 
@@ -222,7 +260,8 @@ li a:hover::after {
 
 .anhGT{
     position: relative;
-    height: 835px; 
+    /* height: 835px;  */
+    height: auto;
     width: 100%;
     /* margin-top: -85px; */
     background-color: #fff;;
@@ -368,9 +407,11 @@ li a:hover::after {
 
 .voteTable{
     width: 100%;
-    height: 710px;
+    /* height: 710px; */
+    height: auto;
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 
 .table1{
@@ -423,8 +464,11 @@ th, td{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    top: 110%;
-    left: -60px;
+    /* top: 110%; */
+    /* left: -60px; */
+    left: 46%;
+    margin-top: 53px;
+    /* margin-top: 10px; */
 }
 
 .pre, .next{
@@ -467,24 +511,27 @@ th, td{
 .picBeyondTab{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 100%;
-    height: 350px;
-    position: absolute;
-    top: 120%;
+    height: 300px;
+    position: relative;
+    margin: 0px 0px 40px 158px;
+    top: 50px;
+    left: -20px;
 }
 
 .mryHome{
     background: url("../images/mrHome.jpg") no-repeat left center;
     width: 545px;
-    /* background-size: auto; */
     height: 240px;
+    box-shadow: 0px 2px 10px #bebebe;
 }
 
 .estate{
     background: url("../images/building.jpg") no-repeat right center;
     width: 545px;
-    /* background-size: auto; */
+    box-shadow: 0px 2px 10px #bebebe;
+    margin-left: 25px;
     height: 240px;
 }
 
@@ -502,10 +549,134 @@ th, td{
     height: 76px;
 }
 
-/* .vote{
+.vote{
+    /* position: relative; */
+    width: 100%;
+    text-align: center;
+}
+
+.voteList{
+    /* height: 100px; */
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.break{
     position: relative;
-} */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
 
+.break > .lo2{
+    left: 47.5%;
+}
+.break > .parallelogam{
+    background-color: rgb(0, 81, 83);
+    top: 44%;
+}
 
+.roles{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
 
+.role1, .role2, .role3{
+    height: auto;
+    padding: 14px;
+    text-transform: uppercase;
+    border: 2px solid var(--orangeColor);
+    transform: skewX(-20deg);
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #fff;
+    color: black;
+    font-style: normal;
+    margin: 0 15px 40px 15px;
+    text-align: center;
+    box-shadow: 2px 2px 20px #bebebe;
+}
 
+.role1:hover, .role2:hover, .role3:hover{
+    background-color: var(--orangeColor);
+    color: white;
+}
+
+.role1 > span, .role2 > span, .role3 > span{
+    display: inline-block;
+    transform: skew(20deg);
+}
+
+.gridPic{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* background-color: #fff; */ 
+    gap: 46px;
+    width: fit-content;
+    position: relative;
+    left: 12%;
+    margin-bottom: 100px;
+
+}
+
+.gi{
+    background: #fff url("../images/cauthu.jpg.png") no-repeat right top;
+    box-shadow: 2px 2px 10px #bebebe;
+    width: 211px;
+    height: 332px;
+    margin-left: 18%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.partner{
+    /* background: url("../images/endTri.png") no-repeat left top; */
+    width: 100%;
+    height: 200px;
+
+}
+
+.anhTri{
+    position: relative;
+    top: -100px;
+}
+
+.group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    top: -500px;
+    padding: 10px;
+    margin-left: 80px;
+}
+
+.grimage{
+    width: 150px;
+    height: 100px;
+    box-shadow: 0px 0px 10px #bebebe;
+    margin: 20px;
+}
+
+.group > .pre, .group > .next{
+    position: relative; 
+    top: 40px;
+    border: none;
+    background-color: #fff;
+}
+
+.group > .arrNext > a, .group > .arrPre > a{
+    color: rgb(104, 104, 103);
+    background-color: rgb(104, 104, 103);
+}
+.group > .pre:hover, .group > .next:hover{
+    background-color: #fff;
+}
+.group > .pre:hover .arrPre > a, .group > .next:hover .arrNext > a{
+    background-color: rgb(165, 31, 31);
+    color: rgb(165, 31, 31);
+}
