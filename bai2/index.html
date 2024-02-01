@@ -3,29 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1"
+        name="viewport">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div id="all">
         <div class="camBong">
             <div class="logo">
-                <div class="container f" style="font-weight: bold;"></div>
-                <div class="container g"></div>
-                <div class="container ytb"
-                    style="background-color: rgb(255, 98, 1); width: 3.5px; height: 15px; border-radius: 3px; background-position: center center; margin-left: 8px;">
-                    <div class="triangle"></div>
+                <div class="logo-content">
+                    <div class="container f" style="font-weight: bold;"></div>
+                    <div class="container g"></div>
+                    <div class="container ytb">
+                        <div class="triangle"></div>
+                    </div>
                 </div>
+
             </div>
 
             <header>
                 <div class="bvote"></div>
+                <label for="navToggle" id="navToggle"><span>&#9776; Menu</span></label>
                 <div class="navi">
                     <ul class="ulist">
                         <li><a href="#">Trang chủ</a></li>
@@ -39,24 +43,27 @@
 
             <div class="bong">
                 <div class="spleague">
-                    <img class="spl spl1" src="./images/supaleag.jpg" alt="superleague"
-                        style="width: 490px; height: 60px; margin:0px 0px 50px 40px;">
-                    <img class="spl spl2" src="./images/3Bong.png" alt="3Bong0" style="width: 530px; height: 220px;">
-                    <img class="spl spl3" src="./images/camChe.png" alt="bongGiua"
-                        style="width: 185px; height: 185px; ">
+                    <img class="spl spl1" src="./images/supaleag.jpg" alt="superleague">
+                    <img class="spl spl2" src="./images/3Bong.png" alt="3Bong0">
+                    <img class="spl spl3" src="./images/camChe.png" alt="bongGiua">
                 </div>
 
                 <div class="btc">
-                    <p>
-                        Ban tổ chức :</p>
-                    <div class="blogo"></div>
-                    <div class="blogo" style="position: relative; left: -39px; width: 124px;"></div>
-                    <div class="blogo" style="position: relative; left: -26px; width: 125px;"></div>
-                    <div class="blogo" style="position: relative; left: -16px; width: 124px;"></div>
+                    <p>Ban tổ chức :</p>
+                    <div class="blogo blg1"></div>
+                    <div class="blogo blg2" style="position: relative; transform: translate(-10px, 0px); width: 120px;">
+                    </div>
+                    <div class="blogo blg3" style="position: relative; transform: translate(-26px, 0px); width: 120px;">
+                    </div>
+                    <div class="blogo blg4" style="position: relative; transform: translate(-35px, 0px); width: 124px;">
+                    </div>
+                    <div class="showBtc" style="width: 20px; height: 20px;">
+                        <button>More</button>
+                    </div>
                 </div>
 
                 <div class="arr">
-                    <img src="./images/arrow.png" alt="arr">
+                    <img src="./images/arrow.png" alt="arr" style="height: auto; max-width: 1400px">
                 </div>
             </div>
 
@@ -90,12 +97,9 @@
             </div>
 
             <div class="hdgd">
-                <img src="./images/stad.png" alt="stadium" class="hdgdSub stadium">
-                <img src="./images/opaSta.png" alt="opacity" class="hdgdSub opacity">
+                <div class="hdgdSub stadium"></div>
                 <p class="hdgdSub hdgdText">HOẠT ĐỘNG GẦN ĐÂY</p>
-                <div class="hdgdSub lo1"></div>
                 <div class="hdgdSub parallelogam"></div>
-                <div class="hdgdSub lo2"></div>
             </div>
 
             <div class="voteTable">
@@ -171,15 +175,15 @@
                     </table>
                 </div>
                 <div class="nextPre">
-                    <div class="pre">
-                        <div class="arrPre">
-                            <a href="#">helo</a>
-                        </div>
+                    <div class="pre pre_table">
+                        <a href="#">
+                            <img src="./images/preArrOrange.png" alt="preArrow">
+                        </a>
                     </div>
-                    <div class="next">
-                        <div class="arrNext">
-                            <a href="#">helo</a>
-                        </div>
+                    <div class="next next_table">
+                        <a href="#">
+                            <img src="./images/nextArrOrange.png" alt="nextArrow">
+                        </a>
                     </div>
                 </div>
                 <div class="picBeyondTab">
@@ -198,9 +202,7 @@
             <div class="voteList">DANH SÁCH VOTE</div>
 
             <div class="break" style="height: 20px;">
-                <div class="lo1"></div>
                 <div class="parallelogam"></div>
-                <div class="lo2"></div>
             </div>
 
             <div class="roles">
@@ -210,81 +212,172 @@
             </div>
 
             <div class="gridPic">
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
-                <div class="gi"></div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
+                <div class="gi">
+                    <img src="./images/frameSoccer.png" alt="" class="gi_pic">
+                    <span class="gi_name">NGUYỄN VĂN ABCZ</span>
+                    <div class="gi__info">
+                        <p class="gi__info-sdb">Số báo danh : 2019-134</p>
+                        <p class="gi__info-score">Tổng điểm : 5421</p>
+                    </div>
+                    <p class="gi__infor-vote">Bình chọn</p>
+                </div>
             </div>
 
         </div>
 
         <div class="partner">
-            <img src="./images/endTri(2).png" alt="anh" class="anhTri">
+            <div class="divAnhTri"></div>
             <div class="group">
                 <div class="pre">
-                    <div class="arrPre">
-                        <a href="#">helo</a>
+                    <a href="" class="arrPre">
+                        <img src="./images/arrPre.png" alt="preArrow">
+                    </a>
+                </div>
+
+                <div class="groupGrimage">
+                    <div>
+                        <img class="grimage" src="./images/bamboo.png" alt="">
+                    </div>
+                    <div>
+                        <img class="grimage" src="./images/flc.png" alt="" style="margin-right: -1px;">
+                    </div>
+                    <div>
+                        <img class="grimage" src="./images/phoenix.png" alt="" style="margin-right: -2px;">
+                    </div>
+                    <div>
+                        <img class="grimage" src="./images/queen.png" alt="" style="margin-right: -1px;">
+                    </div>
+                    <div>
+                        <img class="grimage" src="./images/lasenVu.png" alt="" style="margin-right: -1px;">
+                    </div>
+                    <div>
+                        <img class="grimage" src="./images/triMin.png" alt="">
                     </div>
                 </div>
-                <div>
-                    <img class="grimage" src="./images/bamboo.png" alt="">
-                </div>
-                <div>
-                    <img class="grimage" src="./images/flc.png" alt="" style="margin-right: -1px;">
-                </div>
-                <div>
-                    <img class="grimage" src="./images/phoenix.png" alt="" style="margin-right: -2px;">
-                </div>
-                <div>
-                    <img class="grimage" src="./images/queen.png" alt="" style="margin-right: -1px;">
-                </div>
-                <div>
-                    <img class="grimage" src="./images/lasenVu.png" alt="" style="margin-right: -1px;">
-                </div>
-                <div>
-                    <img class="grimage" src="./images/triMin.png" alt="">
-                </div>
+
                 <div class="next">
-                    <div class="arrNext">
-                        <a href="#">helo</a>
-                    </div>
+                    <a href="" class="arrNext">
+                        <img src="./images/arrNext.png" alt="nextArrow">
+                    </a>
                 </div>
             </div>
 
             <div class="anhFooter">
 
                 <div class="end a1">
-                    <img class="a1" src="./images/stadium.png" alt="sanBong">
-                </div>
-
-                <div class="end a2">
-                    <img class="a2" src="./images/opaSta.png" alt="opacityStadium">
+                    <!-- <img class="a1" src="./images/stadium.png" alt="sanBong"> -->
                 </div>
 
                 <div class="end a3">
                     <img class="a3" src="./images/bvote.png" alt="bvote">
                 </div>
 
-                <div class="end" style="
-                top: -52px;
-                left: 493px;">
+                <div class="end endp">
                     <p>Bản quyền © 2018 bởi Bytesoft Viet Nam. All rights reserved.</p>
                 </div>
 
             </div>
 
         </div>
-
-        <!-- <footer class="footer"> -->
-        <!-- </footer> -->
     </div>
 
 </body>
