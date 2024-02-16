@@ -1,0 +1,7 @@
+- sua lai margin tu % -> px     OKE
+- khong chinh transform, top, left, ... cho cac thanh phan relative     OKE
+- cac thanh phan chinh de relative      OKE
+- chia trang web thanh cac thanh phan: header, main, footer     OKE
+- moi phan chua the section (section head, section content), trong section co the container 
+- hieu ung khi hover (color, cursor,...)    OKE
+- 
