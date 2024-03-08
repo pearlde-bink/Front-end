@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./asset/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -63,6 +67,14 @@
                 </div>
 
                 <div id="carouselExampleSlidesOnly" class="content__head__img carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="./asset/images/slider1(2).jpg" class="d-block w-100" alt="slider1">
@@ -104,9 +116,10 @@
                                 <p>Đặt lịch - Tư vấn</p>
                             </div>
                             <div class="content__main--left--item-detail text-uppercase">
-                                <input class="input--1" type="text" placeholder="Họ tên">
-                                <input class="input--2" type="text" placeholder="Số điện thoại">
-                                <input class="input--3" type="text" placeholder="Nội dung">
+                                <input class="input--1" type="text" placeholder="Họ và tên:">
+                                <input class="input--2" type="text" placeholder="Số điện thoại:">
+                                <textarea class="input--3" name="" id="" cols="29" rows="4"
+                                    placeholder="Nội dung:"></textarea>
                                 <button>
                                     <div>Gửi đi</div>
                                 </button>
@@ -125,7 +138,8 @@
 
                     <!-- right -->
                     <div class="col-sm-10 col-md-8 content__main__right">
-                        <div class="row content__main__right--item item--1">
+                        <!-- news -->
+                        <div class="row content__main__right--item news">
                             <div
                                 class="content__main__right--item-header text-uppercase text-light text-center fw-semibold">
                                 <p>Tin tức ngành y dược</p>
@@ -178,8 +192,8 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="row content__main__right--item item--2">
+                        <!-- more  -->
+                        <div class="row content__main__right--item more">
                             <div class="col-sm-9 col-md-6">
                                 <div
                                     class="content__main__right--item-header text-uppercase text-light text-center fw-semibold">
@@ -262,7 +276,6 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
