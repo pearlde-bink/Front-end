@@ -35,13 +35,13 @@ body {
     margin-top: 52px;
     margin-left: 138px;
     line-height: 32px;
-    font-weight: bold;
+    font-weight: 600;
     color: red;
     text-shadow:
-        -2px 0 white,
-        0 2px white,
-        2px 0 white,
-        0 -2px white;
+        -3px 0 white,
+        0 3px white,
+        3px 0 white,
+        0 -3px white;
 }
 
 .banner__text p {
@@ -349,7 +349,7 @@ body {
     height: 30px;
     background-color: rgb(55, 179, 74);
     color: white;
-    margin: 17px 79px;
+    margin: 22px 79px;
     border: none;
     font-size: 15px;
     text-transform: uppercase;
@@ -708,11 +708,15 @@ body {
 
 .more .main__right--item-detail .moreResponse {
     margin-top: 19px;
-    margin-left: 139px;
+    margin-left: 131px;
+    position: relative;
 }
 
-.more .main__right--item-detail .moreResponse a {
+.more .main__right--item-detail .moreResponse button {
     text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: white;
     color: rgb(233, 86, 29);
     font-size: 14px;
     font-weight: 700;
@@ -720,7 +724,7 @@ body {
     letter-spacing: -0.5px;
 }
 
-.more .main__right--item-detail .moreResponse a:after {
+.more .main__right--item-detail .moreResponse button:after {
     content: "";
     width: 144px;
     height: 1px;
@@ -730,8 +734,106 @@ body {
     display: block;
 }
 
-.more .main__right--item-detail .moreResponse a:hover {
+.more .main__right--item-detail .moreResponse button:hover {
     color: rgb(208, 50, 18);
+}
+
+#ideaForm2 {
+    display: none;
+}
+
+.ideaForm form {
+    width: 430px;
+    height: 365px;
+    border: none;
+    background-color: white;
+    position: absolute;
+    z-index: 20;
+    box-shadow: 0px 0px 10px rgb(189, 189, 189);
+    top: 50px;
+    left: 100%;
+}
+
+.ideaForm form input,
+textarea {
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    width: 90.5%;
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
+    height: 31px;
+    box-shadow: inset 0px 1px 7px rgb(227, 227, 227);
+    font-size: 12px;
+}
+
+.ideaForm .input--2::placeholder {
+    font-size: 12px;
+    margin-left: -8px;
+}
+
+.ideaForm form textarea {
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 7px rgb(227, 227, 227);
+    width: 90%;
+    height: 100px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.ideaForm form textarea::placeholder {
+    font-size: 12px;
+    margin-left: -8px;
+}
+
+.ideaForm div {
+    margin-left: 20px;
+}
+
+.ideaForm div label {
+    font-size: 12px;
+}
+
+.ideaForm div .img1 {
+    width: 82px;
+    height: 20px;
+    border: 1px solid green;
+    margin-left: 15px;
+}
+
+.ideaForm div input {
+    width: 100px;
+    height: 20px;
+    margin: 0 20px;
+}
+
+.ideaForm div .img2 {
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    margin-left: -9px;
+}
+
+.ideaForm button {
+    width: 100px;
+    height: 30px;
+    background-color: #37b34a !important;
+    color: white !important;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 165px;
+}
+
+.ideaForm button:after {
+    content: "";
+    width: 0 !important;
+    height: 0 !important;
+}
+
+.ideaForm button div {
+    margin: 0;
 }
 
 .more .main__right--item-header.item--2 {
