@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
@@ -26,20 +27,64 @@
         </div>
 
         <!-- nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid nav-small">
                 <div class="collapse navbar-collapse d-flex justify-content-center align-items-center"
                     id="navbarNavAltMarkup">
-                    <div class="navbar-nav text-uppercase fw-bold">
-                        <a class="nav-link" aria-current="page" href="#">trang chủ</a>
-                        <a class="nav-link" href="#">Giới thiệu</a>
-                        <a class="nav-link" href="#">Phương pháp chữa bệnh</a>
-                        <a class="nav-link" href="#">Tin tức</a>
-                        <a class="nav-link" href="#">Thư viện</a>
-                        <a class="nav-link" href="#">Liên hệ</a>
-                        <a class="nav-link" href="#">Đăng nhập hệ thống</a>
-                    </div>
+                    <ul class="navbar-nav text-uppercase fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Phương pháp chữa bệnh</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tin tức</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Thư viện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng nhập hệ thống</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+            <div class="container-fluid nav-extraSmall">
+                <ul class="navbar-nav text-uppercase fw-bold">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Trang chủ
+                        </a>
+                        <ul class="dropdown-menu ul-nav-xs" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Phương pháp chữa bệnh</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Tin tức</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Thư viện</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Liên hệ</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Đăng nhập hệ thống</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -93,9 +138,9 @@
 
             <!-- main content -->
             <div class="container main">
-                <div class="row d-flex justify-content-center align-items-center g-10">
+                <div class="row d-flex justify-content-center align-items-center g-10 mainAll">
                     <!-- left -->
-                    <div class="col-sm-10 col-md-3 main__left">
+                    <div class="col-xs-10 col-sm-3 main__left">
                         <div class="row main__left--item item--1">
                             <div class="main__left--item-header text-uppercase text-light text-center fw-semibold">
                                 <p>Chuyển chữa các bệnh</p>
@@ -134,7 +179,7 @@
                     </div>
 
                     <!-- right -->
-                    <div class="col-sm-10 col-md-8 main__right">
+                    <div class="col-xs-10 col-sm-8 main__right">
                         <!-- news -->
                         <div class="row main__right--item news">
                             <div class="main__right--item-header text-uppercase text-light text-center fw-semibold">
@@ -190,7 +235,7 @@
                         </div>
                         <!-- more  -->
                         <div class="row main__right--item more">
-                            <div class="col-sm-9 col-md-6">
+                            <div class="col-sm-6 col-xs-9">
                                 <div class="main__right--item-header text-uppercase text-light text-center fw-semibold">
                                     <p style="margin-top: 7px;
                                     margin-left: 1px;">Ý kiến phản hồi</p>
@@ -248,7 +293,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-9 col-md-6">
+                            <div class="col-sm-6 col-xs-9">
                                 <div
                                     class="main__right--item-header item--2 text-uppercase text-light text-center fw-semibold">
                                     <p>Sức khỏe đời sống</p>
