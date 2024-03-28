@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'utm-avo';
+    src: url('../webfontkit-20240314-040729/utm-avo-webfont.woff') format('woff'),
+        url('../webfontkit-20240314-040729/utm-avo-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'utm-avo', sans-serif;
+}
+
+.app {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    position: relative;
+}
+
+.header__hotline {
+    width: 100%;
+    height: 42px;
+    background-color: #1d407d;
+}
+
+.header__hotline--phone p {
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: white;
+    transform: translateX(11px);
+}
+
+.header__hotline--phone p span {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.header__hotline--search {
+    margin-top: 9px;
+    margin-left: -50px;
+}
+
+.header__hotline--search form input {
+    height: 24px;
+    width: 172px;
+    margin-right: 18px !important;
+    border-radius: 40px;
+}
+
+.header__hotline--search form input::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.header__hotline--search form select {
+    height: 30px;
+    word-wrap: normal;
+    width: 45px;
+    margin-right: 1px;
+    margin-top: -4px;
+    background: white url("../images/flag.jpg") no-repeat;
+    background-position: 5px 7px;
+    cursor: pointer;
+}
+
+.header__nav {
+    width: 100%;
+    box-shadow: 0px 5px 35px rgba(29, 64, 125, 0.2);
+    z-index: 10;
+    position: relative;
+}
+
+.header__nav .navbar {
+    margin-left: 380px;
+}
+
+.navbar-brand {
+    margin-right: 160px !important;
+    margin-top: 3px;
+}
+
+.nav-item a {
+    color: #1d407d !important;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: -4px;
+    margin-right: 21px;
+    margin-top: 4px;
+    padding: 4px 13px 8px 8px !important;
+}
+
+.nav-item a:hover {
+    background-color: #1bcd8d;
+}
+
+.nav-item .nav-link.active {
+    background-color: #1bcd8d !important;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:active:after,
+.nav-link:active:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.nav-link:active:after {
+    border-color: #1bcd8d transparent transparent #1bcd8d;
+    top: -5px;
+    left: -5px;
+}
+
+.nav-link:active:before {
+    border-color: transparent #1bcd8d #1bcd8d transparent;
+    bottom: -3px;
+    right: -5px;
+}
+
+.header__main {
+    color: #1d407d;
+    width: 100%;
+    height: 152px;
+    background-color: #eff3fa;
+    margin-top: -46px;
+}
+
+.header__main div {
+    width: 110px;
+    margin: 0 auto;
+    transform: translateY(46px);
+}
+
+.header__main h3 {
+    font-size: 27px;
+    margin-top: 46px;
+    margin-left: 9px;
+}
+
+.header__main p {
+    margin-top: -3px;
+    font-size: 17px;
+    margin-left: -6px;
+    width: 250px;
+    letter-spacing: 0px;
+    word-spacing: -3px;
+}
+
+
+
+/* footer */
+.footer {
+    height: 455px;
+    background: url("../images/footer.png") no-repeat;
+}
+
+.footer .container {
+    height: 100%;
+}
+
+.footer .container .row {
+    transform: translate(-15px, 35px);
+}
+
+.footer__left-logo {
+    margin-left: 116px;
+    margin-top: 1px;
+}
+
+.footer__left-text {
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 102px;
+}
+
+.footer__left-text p {
+    transform: translateY(18px);
+    letter-spacing: -0.5px;
+    word-spacing: 1px;
+    line-height: 25px;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.footer__left-copyright {
+    margin-top: -11px;
+    margin-left: 102px;
+    letter-spacing: 0px;
+    word-spacing: -3px;
+}
+
+.footer__right {
+    transform: translate(53px, 9px);
+}
+
+.footer__right--service1 a,
+.footer__right--service2 a {
+    font-size: 27px;
+    color: white;
+    margin-left: 1px;
+}
+
+.footer__right--service1 ul,
+.footer__right--service2 ul {
+    list-style-type: none;
+    margin-top: 32px;
+    margin-left: -33px;
+}
+
+.footer__right--service1 ul li,
+.footer__right--service2 ul li {
+    margin-bottom: 18px;
+}
+
+.footer__right--service2 {
+    margin-left: -54px;
+}
+
+.footer .foot {
+    margin-top: 40px;
+    width: 88%;
+    height: 70px;
+    background-color: #1d407d;
+    margin-left: 80px;
+}
+
+.footer .foot p {
+    color: white;
+    text-align: center;
+    font-size: 15.2px;
+    padding-top: 18px;
+}
