@@ -95,14 +95,23 @@ hr {
     margin-top: 3px;
 }
 
+.navbar-nav {
+    overflow: hidden;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
 .nav-item a {
     color: white !important;
     font-size: 16px;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-transform: uppercase;
     word-spacing: -4px;
     margin-right: 21px;
     margin-top: 4px;
+    display: block;
     padding: 4px 13px 8px 8px !important;
 }
 
@@ -1051,6 +1060,7 @@ hr {
     height: 425px;
     background: url("../images/footerBg.jpg") no-repeat;
     margin-top: -207px;
+
 }
 
 .footer .container {
@@ -1113,6 +1123,8 @@ hr {
 @media only screen and (max-width: 479px) {
     .app {
         width: 400px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .header {
@@ -1127,12 +1139,13 @@ hr {
     }
 
     .header__main p {
-        font-size: 18px;
+        font-size: 15px;
         width: 380px;
     }
 
     .header__hotline--phone p {
-        font-size: 7px;
+        font-size: 10px;
+        width: 100px;
     }
 
     .header__nav {
@@ -1141,7 +1154,11 @@ hr {
     }
 
     .header__main h2 {
-        font-size: 30px !important;
+        font-size: 25px !important;
+    }
+
+    .header__cloud {
+        left: -225px;
     }
 
     .navbar-brand {
@@ -1176,7 +1193,7 @@ hr {
     }
 
     .about__cloud {
-        right: 0px;
+        right: -350px;
     }
 
     .about__left img {
@@ -1202,12 +1219,12 @@ hr {
     }
 
     .field__left {
-        margin-left: -80px;
+        margin-left: 0px;
     }
 
     .field__left--title h2 {
         font-size: 35px;
-        transform: translateX(40px);
+        transform: translateX(20px);
     }
 
     .field__left--content {
@@ -1217,6 +1234,10 @@ hr {
 
     .field__left--content div {
         width: 350px;
+    }
+
+    .field__right {
+        transform: translateX(-10px);
     }
 
     .field__right img {
@@ -1239,6 +1260,7 @@ hr {
     .project:after {
         right: 40px;
         z-index: -1;
+        background-size: 90%;
     }
 
     .project__left {
@@ -1312,6 +1334,10 @@ hr {
         right: 40px;
     }
 
+    .hiring {
+        margin-top: 280px;
+    }
+
     .hiring>.row {
         margin-left: -110px;
 
@@ -1323,7 +1349,7 @@ hr {
     }
 
     .hiring__left img {
-        width: 400px;
+        width: 360px;
     }
 
     .hiring__right {
@@ -1351,11 +1377,17 @@ hr {
         width: 360px;
         background-position: 0px 60px;
         background-size: 100%;
+        transform: translateX(5px);
+    }
+
+    .partner__item {
+        margin-top: -70px;
+        margin-left: 0px;
     }
 
     .partner__title {
-        top: 90px;
-        left: 33%;
+        top: 40px;
+        left: 23%;
     }
 
     .partner__title h5 {
@@ -1377,6 +1409,7 @@ hr {
 
     .footer__left-logo {
         margin-left: 50px;
+        margin-bottom: 40px;
         margin-top: -40px;
     }
 
@@ -1384,6 +1417,10 @@ hr {
         display: none;
         width: 380px;
         margin-left: 40px;
+    }
+
+    .footer__left-copyright {
+        display: none;
     }
 
     .footer__right {
@@ -1394,6 +1431,8 @@ hr {
 @media only screen and (min-width: 480px) and (max-width: 575px) {
     .app {
         width: 480px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .header {
@@ -1412,6 +1451,11 @@ hr {
         width: 450px;
     }
 
+    .header__hotline--phone p {
+        font-size: 10px;
+        width: 100px;
+    }
+
     .header__nav {
         margin: 0 auto;
         transform: translateX(0px);
@@ -1419,6 +1463,10 @@ hr {
 
     .header__main h2 {
         font-size: 30px !important;
+    }
+
+    .header__cloud {
+        left: -225px;
     }
 
     .navbar-brand {
@@ -1449,7 +1497,7 @@ hr {
     }
 
     .about__cloud {
-        right: 0px;
+        right: -350px;
     }
 
     .about__left img {
@@ -1482,11 +1530,15 @@ hr {
     }
 
     .field__left--content {
-        margin-left: 70px;
+        margin-left: 100px;
     }
 
     .field__left--content div {
         width: 350px;
+    }
+
+    .field__right {
+        transform: translateX(20px);
     }
 
     .field__right img {
@@ -1509,9 +1561,11 @@ hr {
     .project:after {
         right: 40px;
         z-index: -1;
+        background-size: 92%;
     }
 
     .project__left {
+        transform: translateX(25px);
         margin-top: -110px !important;
     }
 
@@ -1577,19 +1631,49 @@ hr {
         right: 40px;
     }
 
+    .hiring {
+        margin-top: 280px;
+    }
+
     .hiring>.row {
         margin-left: -110px;
 
     }
 
     .hiring__left {
+        text-align: center;
         width: 80% !important;
-        transform: translateX(60px);
+        transform: translate(47px, -57px);
+    }
+
+    .news__title h4 {
+        transform: translate(-29px, 1px);
+    }
+
+    .news__content {
+        margin-left: 75px;
+
+    }
+
+    .greenButton {
+        margin-left: 15px;
+    }
+
+    .partner {
+        transform: translateX(5px);
     }
 
     .hiring__right {
         margin-left: -50px;
         width: 490px !important;
+    }
+
+    .hiring__right--title:before {
+        left: 175px;
+    }
+
+    .hiring__right--title:after {
+        left: 200px;
     }
 
     .hiring__right--text {
@@ -1608,7 +1692,21 @@ hr {
         width: 500px;
     }
 
+    .news__title h4 {
+        transform: translate(-29px, 1px);
+    }
+
+    .news__content {
+        margin-left: 75px;
+
+    }
+
+    .greenButton {
+        margin-left: 15px;
+    }
+
     .partner {
+        transform: translateX(5px);
         width: 460px;
         background-position: 0px 60px;
         background-size: 100%;
@@ -1655,15 +1753,20 @@ hr {
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .app {
         width: 576px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .header {
-        background-size: 130%;
+        background-size: 105%;
         height: 730px;
     }
 
     .header__main {
-        transform: translate(-350px, -100px);
+        position: absolute;
+        top: -40px;
+        left: -25% !important;
+        width: 450px;
         color: white;
     }
 
@@ -1674,6 +1777,10 @@ hr {
 
     .header__main h2 {
         font-size: 40px !important;
+    }
+
+    .header__cloud {
+        left: -225px;
     }
 
     .navbar-brand {
@@ -1701,10 +1808,6 @@ hr {
         font-size: 15px;
         margin-right: -41px;
         display: inline-block;
-    }
-
-    .about__cloud {
-        right: -15px;
     }
 
     .about__left img {
@@ -1742,6 +1845,10 @@ hr {
         width: 350px;
     }
 
+    .field__right {
+        transform: translateX(-24px);
+    }
+
     .field__right img {
         width: 400px;
         margin-left: 70px;
@@ -1754,17 +1861,43 @@ hr {
         margin-right: 0px !important;
     }
 
-    .project:after {
-        right: 40px;
-        z-index: -1;
+    .project:before {
+        left: -293px;
+    }
+
+    .project>.row:after {
+        left: 87px;
+        bottom: -440px;
     }
 
     .project__left {
+        transform: translateX(25px);
         margin-top: -110px !important;
     }
 
     .project__left--item {
-        margin-top: 30px;
+        display: none;
+    }
+
+    .project__left .dropdown {
+        display: block !important;
+    }
+
+    .project__left .dropdown .btn {
+        background-color: #1d407d;
+    }
+
+    .project__right {
+        transform: translate(15px, 120px);
+    }
+
+    .project__right--img:nth-child(4) {
+        margin-top: 0px;
+    }
+
+    .project:after {
+        right: 40px;
+        z-index: -1;
     }
 
     .project__left--item p {
@@ -1787,13 +1920,13 @@ hr {
     }
 
     .news__content .row>div {
-        margin-top: 40px;
+        margin-top: 120px;
         margin-left: 0px !important;
     }
 
     .news__title:after {
-        left: 5%;
-        width: 540px;
+        left: 12%;
+        width: 580px;
         background-size: 100%;
     }
 
@@ -1820,12 +1953,21 @@ hr {
 
     .hiring__left {
         width: 80% !important;
-        transform: translateX(60px);
+        transform: translate(47px, -57px);
     }
 
     .hiring__right {
+        text-align: center;
         margin-left: -50px;
         width: 490px !important;
+    }
+
+    .hiring__right--title:before {
+        left: 175px;
+    }
+
+    .hiring__right--title:after {
+        left: 200px;
     }
 
     .hiring__right--text {
@@ -1837,6 +1979,23 @@ hr {
         left: 0px;
         bottom: -110px;
         width: 500px;
+    }
+
+    .news__title h4 {
+        transform: translate(-29px, 1px);
+    }
+
+    .news__content {
+        margin-left: 75px;
+
+    }
+
+    .greenButton {
+        margin-left: 15px;
+    }
+
+    .partner {
+        transform: translateX(5px);
     }
 
     .partner {
@@ -1851,7 +2010,8 @@ hr {
     }
 
     .partner__title h5 {
-        font-size: 16px;
+        transform: translateY(-6px);
+        font-size: 14px;
     }
 
     .partner__item img {
@@ -1864,7 +2024,11 @@ hr {
     }
 
     .footer__left {
-        margin-left: -40px;
+        transform: translateX(-23px);
+    }
+
+    .footer__right {
+        transform: translate(14px, 22px);
     }
 
     .footer__left-logo {
@@ -1886,15 +2050,38 @@ hr {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .app {
         width: 768px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .header {
-        background-size: 70%;
-        height: 730px;
+        /* background-size: 90%;
+        height: 780px;
+        background-position: calc(100% + 175px) 0; */
+        background-size: 104%;
+        height: 780px;
+        background-position: 100%;
     }
 
     .header__main {
-        transform: translate(-330px, -100px);
+        /* transform: translate(-375px, -3px); */
+        position: absolute;
+        top: -40px;
+        left: -10%;
+        width: 450px;
+        color: white;
+    }
+
+    .header__main p {
+        width: 450px;
+    }
+
+    .header__hotline--phone {
+        transform: translateX(-87px);
+    }
+
+    .header__hotline--search {
+        transform: translateX(90px);
     }
 
     .header__nav {
@@ -1906,14 +2093,19 @@ hr {
         font-size: 40px !important;
     }
 
+    .header__cloud {
+        left: -225px;
+    }
+
     .navbar-brand {
-        margin-left: -100px;
+        margin-left: -60px;
         margin-right: 0px !important;
+        transform: translateX(-80px);
     }
 
     #navbarNav {
         margin-left: 0px;
-        transform: translateY(10px);
+        transform: translate(-50px, 10px);
     }
 
     .navbar-nav {
@@ -1933,8 +2125,8 @@ hr {
         display: inline-block;
     }
 
-    .about__cloud {
-        right: -15px;
+    .about__left {
+        margin-left: -252px;
     }
 
     .about__left img {
@@ -1957,7 +2149,7 @@ hr {
     }
 
     .field__left {
-        margin-left: -80px;
+        transform: translateX(-24px);
     }
 
     .field__left--title h2 {
@@ -1965,11 +2157,15 @@ hr {
     }
 
     .field__left--content {
-        margin-left: 70px;
+        margin-left: 100px;
     }
 
     .field__left--content div {
         width: 350px;
+    }
+
+    .field__right {
+        transform: translateX(-24px);
     }
 
     .field__right img {
@@ -1982,6 +2178,31 @@ hr {
         margin-left: 50px !important;
         width: 700px !important;
         margin-right: 0px !important;
+    }
+
+    .project:before {
+        left: -293px;
+    }
+
+    .project>.row:after {
+        left: 87px;
+        bottom: -430px;
+    }
+
+    .project__left {
+        transform: translateX(25px);
+    }
+
+    .project__left--item {
+        margin-top: 50px;
+    }
+
+    .project__right {
+        transform: translate(15px, 120px);
+    }
+
+    .project__right--img:nth-child(4) {
+        margin-top: 0px;
     }
 
     .project:after {
@@ -2030,8 +2251,17 @@ hr {
     }
 
     .hiring__right {
+        text-align: center;
         margin-left: -50px;
         width: 490px !important;
+    }
+
+    .hiring__right--title:before {
+        left: 175px;
+    }
+
+    .hiring__right--title:after {
+        left: 200px;
     }
 
     .hiring__right--text {
@@ -2039,8 +2269,29 @@ hr {
     }
 
     .hiring__right--img {
-        left: -120px;
+        left: -40px;
         bottom: -110px;
+    }
+
+    .hiring__left {
+        transform: translate(47px, -57px);
+    }
+
+    .news__title h4 {
+        transform: translate(-29px, 1px);
+    }
+
+    .news__content {
+        margin-left: 75px;
+
+    }
+
+    .greenButton {
+        margin-left: 15px;
+    }
+
+    .partner {
+        transform: translateX(5px);
     }
 
     .partner {
@@ -2059,7 +2310,11 @@ hr {
     }
 
     .footer__left {
-        margin-left: -40px;
+        transform: translateX(-55px);
+    }
+
+    .footer__right {
+        transform: translate(14px, 22px);
     }
 
     .footer__left-logo {
@@ -2074,19 +2329,34 @@ hr {
     .footer__right {
         transform: translate(20px, 25px);
     }
+
+    .footer__right--service2 {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .app {
         width: 992px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .header {
-        background-size: 70%;
+        background-size: 85%;
+        background-position: calc(100% + 175px) 0;
     }
 
     .header__main {
-        transform: translate(-300px, -100px);
+        transform: translate(-375px, -3px);
+    }
+
+    .header__hotline--phone {
+        transform: translateX(-87px);
+    }
+
+    .header__hotline--search {
+        transform: translateX(90px);
     }
 
     .header__nav {
@@ -2095,13 +2365,13 @@ hr {
     }
 
     .navbar-brand {
-        margin-left: -140px;
+        margin-left: -60px;
         margin-right: 0px !important;
+        transform: translateX(-80px);
     }
 
     #navbarNav {
-        margin-left: 0px;
-        transform: translateY(10px);
+        transform: translate(-50px, 10px);
     }
 
     .navbar-nav {
@@ -2121,8 +2391,12 @@ hr {
         display: inline-block;
     }
 
-    .about__cloud {
-        right: -15px;
+    .header__cloud {
+        left: -225px;
+    }
+
+    .about__left {
+        margin-left: -252px;
     }
 
     .about__left img {
@@ -2144,12 +2418,20 @@ hr {
     }
 
     .field__left {
-        margin-left: -80px;
+        transform: translateX(-24px);
+    }
+
+    .field__left--content {
+        margin-left: 100px;
+    }
+
+    .field__right {
+        transform: translateX(-24px);
     }
 
     .field__right img {
         width: 460px;
-        margin-left: 90px;
+        margin-left: 75px;
         margin-top: 100px;
     }
 
@@ -2159,8 +2441,28 @@ hr {
         margin-right: 0px !important;
     }
 
+    .project:before {
+        left: -293px;
+    }
+
+    .project>.row:after {
+        left: 87px;
+    }
+
+    .project__left {
+        transform: translateX(25px);
+    }
+
+    .project__left--item {
+        margin-top: 50px;
+    }
+
+    .project__right {
+        transform: translate(15px, 120px);
+    }
+
     .project:after {
-        right: 40px;
+        right: -221px;
         z-index: -1;
     }
 
@@ -2188,6 +2490,11 @@ hr {
         width: 470px !important;
     }
 
+    .hiring__right--img {
+        bottom: -80px;
+        right: -20px;
+    }
+
     .hiring__right--text {
         margin-left: -20px;
     }
@@ -2199,6 +2506,27 @@ hr {
 
     .hiring__right--button {
         width: 80%;
+    }
+
+    .hiring__left {
+        transform: translate(47px, -57px);
+    }
+
+    .news__title h4 {
+        transform: translate(-29px, 1px);
+    }
+
+    .news__content {
+        margin-left: 75px;
+
+    }
+
+    .greenButton {
+        margin-left: 15px;
+    }
+
+    .partner {
+        transform: translateX(5px);
     }
 
     .news__content .row {
@@ -2233,6 +2561,14 @@ hr {
     }
 
     .footer__left {
+        transform: translateX(-23px);
+    }
+
+    .footer__right {
+        transform: translate(14px, 22px);
+    }
+
+    .footer__left {
         margin-left: -40px;
     }
 
@@ -2244,14 +2580,25 @@ hr {
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
     .app {
         width: 1200px;
+        width: 100%;
+        overflow: hidden;
     }
 
     .header {
-        background-size: 70%;
+        background-size: 85%;
+        background-position: calc(100% + 175px) 0;
     }
 
     .header__main {
-        transform: translate(-230px, -30px);
+        transform: translate(-375px, -3px);
+    }
+
+    .header__hotline--phone {
+        transform: translateX(-87px);
+    }
+
+    .header__hotline--search {
+        transform: translateX(90px);
     }
 
     .header__nav {
@@ -2260,12 +2607,14 @@ hr {
     }
 
     .navbar-brand {
-        margin-left: -160px;
+        margin-left: -60px;
         margin-right: 0px !important;
+        transform: translateX(-80px);
     }
 
     #navbarNav {
-        margin-left: 100px;
+        /* margin-left: 100px;
+        margin-left: -84px; */
         transform: translateY(10px);
     }
 
@@ -2276,20 +2625,48 @@ hr {
         margin-right: 0px;
     }
 
-    .about__cloud {
-        right: -35px;
+    .header__cloud {
+        left: -225px;
+    }
+
+    .about__left {
+        margin-left: -252px;
     }
 
     .about__right {
         width: 520px !important;
     }
 
+    .field__left {
+        transform: translateX(-24px);
+    }
+
+    .field__right {
+        transform: translateX(-24px);
+    }
+
     .project {
         margin-left: 70px !important;
     }
 
+    .project:before {
+        left: -293px;
+    }
+
+    .project>.row:after {
+        left: 87px;
+    }
+
+    .project__left {
+        transform: translatex(72px);
+    }
+
+    .project__right {
+        transform: translatex(14px);
+    }
+
     .project:after {
-        right: 20px;
+        right: -221px;
         z-index: -1;
     }
 
@@ -2306,22 +2683,62 @@ hr {
         margin-left: -50px;
     }
 
+    .hiring__left {
+        transform: translate(47px, -57px);
+    }
+
+    .news__title h4 {
+        transform: translate(-29px, 1px);
+    }
+
+    .news__content {
+        margin-left: 75px;
+
+    }
+
+    .greenButton {
+        margin-left: 15px;
+    }
+
+    .partner {
+        transform: translateX(5px);
+    }
+
     .footer .container {
         height: 350px;
+    }
+
+    .footer__left {
+        transform: translateX(-23px);
+    }
+
+    .footer__right {
+        transform: translate(14px, 22px);
     }
 }
 
 @media only screen and (min-width: 1401px) and (max-width: 1899px) {
     .app {
-        width: 1401px;
+        /* width: 1401px; */
+        width: 100%;
+        overflow: hidden;
     }
 
     .header {
-        background-size: 70%;
+        /* background-size: 100%; */
+        background-position: calc(100% + 175px) 0;
+    }
+
+    .header__hotline--phone {
+        transform: translateX(-127px);
+    }
+
+    .header__hotline--search {
+        transform: translateX(90px);
     }
 
     .header__main {
-        transform: translate(-230px, -30px);
+        transform: translate(-225px, -3px);
     }
 
     .header__nav {
@@ -2330,11 +2747,11 @@ hr {
     }
 
     .navbar-brand {
-        transform: translateX(-120px);
+        transform: translateX(-80px);
     }
 
     #navbarNav {
-        margin-left: -180px;
+        margin-left: -84px;
     }
 
     .nav-item a {
@@ -2343,21 +2760,49 @@ hr {
         font-size: 16px;
     }
 
-    .about__cloud {
-        right: -45px;
+    .header__cloud {
+        left: -225px;
+    }
+
+    .about__left {
+        margin-left: -252px;
     }
 
     .about__right {
         width: 610px !important;
     }
 
+    .field__left {
+        transform: translateX(-24px);
+    }
+
+    .field__right {
+        transform: translateX(-24px);
+    }
+
     .project {
         margin-left: 80px !important;
     }
 
+    .project:before {
+        left: -293px;
+    }
+
+    .project>.row:after {
+        left: 87px;
+    }
+
     .project:after {
-        right: 20px;
+        right: -221px;
         z-index: -1;
+    }
+
+    .project__left {
+        transform: translatex(72px);
+    }
+
+    .project__right {
+        transform: translatex(14px);
     }
 
     .news__title:after {
@@ -2372,7 +2817,35 @@ hr {
         margin-left: -50px;
     }
 
+    .hiring__left {
+        transform: translate(47px, -57px);
+    }
+
+    .news__title h4 {
+        transform: translate(-29px, 1px);
+    }
+
+    .news__content {
+        margin-left: 75px !important;
+    }
+
+    .news__button .greenButton {
+        margin-left: -46px;
+    }
+
+    .partner {
+        transform: translateX(-25px);
+    }
+
     .footer .container {
         height: 350px;
+    }
+
+    .footer__left {
+        transform: translateX(-23px);
+    }
+
+    .footer__right {
+        transform: translate(14px, 22px);
     }
 }
