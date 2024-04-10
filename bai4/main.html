@@ -6,10 +6,11 @@
     <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, user-scalable=1"
         name="viewport">
     <title>Document</title>
-    <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,6 +19,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./asset/css/main.css">
 </head>
 
 <body>
@@ -76,6 +78,7 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </nav>
             </div>
@@ -91,11 +94,11 @@
 
         <!-- about -->
         <section class="about container">
-            <div class="row d-flex flex-row justify-content-center aligns-items-center">
-                <div class="about__left col-md-6">
-                    <img src="./asset/images/groupTablet.png" alt="groupAbout">
+            <div class="row d-flex flex-row justify-content-center aligns-items-center flex-wrap">
+                <div class="about__left col-12 col-lg-6">
+                    <img src="./asset/images/ipadMan.png" alt="groupAbout" class="about__left--img">
                 </div>
-                <div class="about__right col-md-6 d-flex flex-column aligns-items-center justify-content-center">
+                <div class="about__right col-12 col-lg-6 d-flex flex-column aligns-items-center justify-content-center">
                     <div class="about__right--title">
                         <h2>VỀ CHÚNG TÔI</h2>
                     </div>
@@ -116,8 +119,8 @@
 
         <!-- field -->
         <section class="field container">
-            <div class="row d-flex flex-row justify-content-center aligns-items-center">
-                <div class="field__left col-md-6">
+            <div class="row d-flex flex-row justify-content-center aligns-items-center flex-wrap">
+                <div class="field__left col-12 col-lg-6">
                     <div class="field__left--title">
                         <h2>LĨNH VỰC HOẠT ĐỘNG</h2>
                     </div>
@@ -157,7 +160,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="field__right col-md-6 d-flex flex-column justify-content-between">
+                <div class="field__right col-12 col-lg-6 d-flex flex-column justify-content-between">
                     <img src="./asset/images/elipComputer.png" alt="elipComputer">
                 </div>
             </div>
@@ -166,7 +169,7 @@
         <!-- project -->
         <section class="project container">
             <div class="row d-flex flex-row justify-content-center aligns-items-center flex-wrap">
-                <div class="project__left col-10 col-lg-3">
+                <div class="project__left col-11 col-lg-3">
                     <div class="project__left--subTitle">
                         <p>Dự án mới nhất</p>
                     </div>
@@ -213,10 +216,14 @@
 
                 </div>
 
-                <div class="project__right col-10 col-lg-9">
+                <div class="project__right col-11 col-lg-9">
+                    <div class="project__view">
+                        <div class="project__view--pre"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="project__view--next"><i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
                     <div class="row">
-                        <div class="col-6 col-lg-4 project__right--img">
-                            <img src="./asset/images/project1.png" alt="projectImage" class="img-fluid">
+                        <div class="col-xs-12 col-sm-6 col-xl-4 project__right--img">
+                            <img src="./asset/images/project1.png" alt="projectImage">
                             <div class="project__right--img--footer openProject">
                                 <div>
                                     <h4>Tòa nhà thành phố</h4>
@@ -228,60 +235,8 @@
                             </div>
                         </div>
 
-                        <div class="col-6 col-lg-4 project__right--img">
-                            <img src="./asset/images/project2.png" alt="projectImage" class="img-fluid">
-                            <div class="project__right--img--footer openProject"  >
-                                <div>
-                                    <h4>Tòa nhà thành phố</h4>
-                                    <p>Thương mại</p>
-                                </div>
-                                <div class="project__right--img--footer-plus">
-                                    <p>+</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-lg-4 project__right--img">
-                            <img src="./asset/images/project3.png" alt="projectImage" class="img-fluid">
-                            <div class="project__right--img--footer openProject"  >
-                                <div>
-                                    <h4>Tòa nhà thành phố</h4>
-                                    <p>Thương mại</p>
-                                </div>
-                                <div class="project__right--img--footer-plus">
-                                    <p>+</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-lg-4 project__right--img">
-                            <img src="./asset/images/project4.png" alt="projectImage" class="img-fluid">
-                            <div class="project__right--img--footer openProject"  >
-                                <div>
-                                    <h4>Tòa nhà thành phố</h4>
-                                    <p>Thương mại</p>
-                                </div>
-                                <div class="project__right--img--footer-plus">
-                                    <p>+</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-lg-4 project__right--img">
-                            <img src="./asset/images/project5.png" alt="projectImage" class="img-fluid">
-                            <div class="project__right--img--footer openProject"  >
-                                <div>
-                                    <h4>Tòa nhà thành phố</h4>
-                                    <p>Thương mại</p>
-                                </div>
-                                <div class="project__right--img--footer-plus">
-                                    <p>+</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-6 col-lg-4 project__right--img">
-                            <img src="./asset/images/project6.png" alt="projectImage" class="img-fluid">
+                        <div class="col-xs-12 col-sm-6 col-xl-4 project__right--img">
+                            <img src="./asset/images/project2.png" alt="projectImage">
                             <div class="project__right--img--footer openProject">
                                 <div>
                                     <h4>Tòa nhà thành phố</h4>
@@ -292,7 +247,59 @@
                                 </div>
                             </div>
                         </div>
-                        
+
+                        <div class="col-xs-12 col-sm-6 col-xl-4 project__right--img">
+                            <img src="./asset/images/project3.png" alt="projectImage">
+                            <div class="project__right--img--footer openProject">
+                                <div>
+                                    <h4>Tòa nhà thành phố</h4>
+                                    <p>Thương mại</p>
+                                </div>
+                                <div class="project__right--img--footer-plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-xl-4 project__right--img">
+                            <img src="./asset/images/project4.png" alt="projectImage">
+                            <div class="project__right--img--footer openProject">
+                                <div>
+                                    <h4>Tòa nhà thành phố</h4>
+                                    <p>Thương mại</p>
+                                </div>
+                                <div class="project__right--img--footer-plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-xl-4 project__right--img">
+                            <img src="./asset/images/project5.png" alt="projectImage">
+                            <div class="project__right--img--footer openProject">
+                                <div>
+                                    <h4>Tòa nhà thành phố</h4>
+                                    <p>Thương mại</p>
+                                </div>
+                                <div class="project__right--img--footer-plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-xl-4 project__right--img">
+                            <img src="./asset/images/project6.png" alt="projectImage">
+                            <div class="project__right--img--footer openProject">
+                                <div>
+                                    <h4>Tòa nhà thành phố</h4>
+                                    <p>Thương mại</p>
+                                </div>
+                                <div class="project__right--img--footer-plus">
+                                    <p>+</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="project__right--img-detail" id="project__detail">
                             <div>
                                 <div
@@ -305,14 +312,14 @@
                                 <div class="project__right--img-detail-more">Xem thêm</div>
                                 <div class="project__right--img-detail-content">
                                     <p>
-                                    Tên dự án                   :Tổ hợp chung cư cao tầng N04B - Khu đoàn Ngoại giao tại Hà Nội
-                                    Chủ đầu tư                  :Công ty Cổ phần Đầu tư Xây dựng Bất động sản Lanmak
-                                    Hạng mục                    :Phần kết cấu thân nhà / Phần hoàn thiện kiến trúc
-                                    Điạ điểm                    :Khu đoàn Ngoại giao, Xuân Tảo, Bắc Từ Liêm, Hà Nội
-                                    Loại công trình             :Dân dụng, căn hộ chung cư
-                                    Cấp công trình              :Cấp 1
-                                    Thời gian thực hiện         :2013-2015
-                                </p>
+                                        Tên dự án :Tổ hợp chung cư cao tầng N04B - Khu đoàn Ngoại giao tại Hà Nội
+                                        Chủ đầu tư :Công ty Cổ phần Đầu tư Xây dựng Bất động sản Lanmak
+                                        Hạng mục :Phần kết cấu thân nhà / Phần hoàn thiện kiến trúc
+                                        Điạ điểm :Khu đoàn Ngoại giao, Xuân Tảo, Bắc Từ Liêm, Hà Nội
+                                        Loại công trình :Dân dụng, căn hộ chung cư
+                                        Cấp công trình :Cấp 1
+                                        Thời gian thực hiện :2013-2015
+                                    </p>
                                 </div>
                                 <div class="project__right--img-detail-close" id="closeProject">
                                     <div>
@@ -361,10 +368,17 @@
 
             <div class="news__content container">
                 <div class="row d-flex flex-row justify-content-center aligns-items-center">
-                    <div class="col-sm-10 col-md-4">
+                    <div class="col-sm-12 col-md-4" style="transform: translateX(36px);">
                         <img src="./asset/images/news1.jpg" alt="newsImg" class="img-fluid">
                         <div class="news__content--post">
-                            <div class="news__content--post--time">5. december 2020 |</div>
+                            <div class="news__content--post--time">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>5. december.2020</p>
+                                <div class="main__post--view">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>328</p>
+                                </div>
+                            </div>
                             <div class="news__content--post--title">
                                 <p>Lorem ipsum dolor sit amet aenean nisi sociis ipsum...</p>
                             </div>
@@ -376,10 +390,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-10 col-md-4" style="margin-left: -32px;">
+                    <div class="col-sm-12 col-md-4" style="transform: translateX(0px);">
                         <img src="./asset/images/news2.jpg" alt="newsImg" class="img-fluid">
                         <div class="news__content--post">
-                            <div class="news__content--post--time">5. december 2020 |</div>
+                            <div class="news__content--post--time"><i class="fa-regular fa-clock"></i>
+                                <p>5. december.2020</p>
+                                <div class="main__post--view">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>328</p>
+                                </div>
+                            </div>
                             <div class="news__content--post--title">
                                 <p>Lorem ipsum dolor sit amet aenean nisi sociis ipsum...</p>
                             </div>
@@ -391,10 +411,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-10 col-md-4" style="margin-left: -37px;">
+                    <div class="col-sm-12 col-md-4" style="transform: translateX(-34px);">
                         <img src="./asset/images/news3.jpg" alt="newsImg" class="img-fluid">
                         <div class="news__content--post">
-                            <div class="news__content--post--time">5. december 2020 |</div>
+                            <div class="news__content--post--time"><i class="fa-regular fa-clock"></i>
+                                <p>5. december.2020</p>
+                                <div class="main__post--view">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>328</p>
+                                </div>
+                            </div>
                             <div class="news__content--post--title">
                                 <p>Lorem ipsum dolor sit amet aenean nisi sociis ipsum...</p>
                             </div>
@@ -419,18 +445,18 @@
             <div class="partner__title">
                 <h5 class="text-uppercase fw-bold">Đối tác khách hàng</h5>
             </div>
-            <div class="partner__item d-flex flex-row justify-content-center aligns-items-center">
-                <img src="./asset/images/partner1.png" alt="partnerImg">
-                <img src="./asset/images/partner2.png" alt="partnerImg">
-                <img src="./asset/images/partner3.png" alt="partnerImg">
+            <div class="partner__item d-flex flex-row justify-content-between aligns-items-center">
+                <img src="./asset/images/partner1.jpg" alt="partnerImg">
+                <img src="./asset/images/partner2.jpg" alt="partnerImg">
+                <img src="./asset/images/partner3.jpg" alt="partnerImg">
             </div>
         </section>
 
         <!-- footer -->
         <section class="footer">
             <div class="container">
-                <div class="row d-flex flex-row justify-content-between">
-                    <div class="col-md-6 footer__left text-light">
+                <div class="row d-flex flex-row justify-content-between flex-wrap aligns-items-center">
+                    <div class="col-12 col-md-6 footer__left text-light">
                         <div class="footer__left-logo">
                             <img src="./asset/images/logoCom.png" alt="logo">
                         </div>
@@ -445,7 +471,7 @@
                         </div>
                         <div class="footer__left-copyright">Copyright 2019 Acefic5. All Rights Reserved</div>
                     </div>
-                    <div class="col-md-6 footer__right text-light">
+                    <div class="col-12 col-md-6 footer__right text-light">
                         <div class="row">
                             <div class="col-6 footer__right--service1">
                                 <a href="" class="text-uppercase">Dịch vụ</a>
@@ -480,7 +506,7 @@
         // openProject.addEventListener("click", function () {
         //     detailProject.style.display = "block";
         // })
-        
+
         // closeProject.addEventListener("click", function () {
         //     detailProject.style.display = "none";
         // })
@@ -490,7 +516,7 @@
         const closeProject = document.querySelector("#closeProject");
 
         // Loop through each openProject button and add event listener
-        openProjects.forEach(function(openProject) {
+        openProjects.forEach(function (openProject) {
             openProject.addEventListener("click", function () {
                 detailProject.style.display = "block";
             });
