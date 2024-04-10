@@ -734,7 +734,7 @@ hr {
     left: 0 !important;
 }
 
-.project__right--img-detail-header{
+.project__right--img-detail-header {
     position: relative;
 }
 
@@ -742,8 +742,10 @@ hr {
     width: 813px;
     height: 896px;
     background-color: white;
-    position: relative;
-    transform: translate(67%, 30%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .project__right--img-detail-header img {
@@ -771,7 +773,7 @@ hr {
     word-spacing: 3px;
 }
 
-.project__right--img-detail-more{
+.project__right--img-detail-more {
     display: none;
     width: 100px;
     color: black;
@@ -780,7 +782,7 @@ hr {
     margin-left: 160px;
 }
 
-.project__right--img-detail-content{
+.project__right--img-detail-content {
     width: 100%;
     text-align: start;
     margin-left: -66px;
@@ -1918,13 +1920,14 @@ hr {
         background-color: #1d407d;
     }
 
+    /* 
     .project__right {
-        /* transform: translate(15px, 120px); */
-    }
+        transform: translate(15px, 120px);
+    } */
 
-    .project__right--img-detail-header .project__right--img-detail--title h4{
+    .project__right--img-detail-header .project__right--img-detail--title h4 {
         font-size: 20px;
-    transform: translate(152px, 27px);
+        transform: translate(152px, 27px);
     }
 
     .project__right--img:nth-child(4) {
@@ -1944,27 +1947,29 @@ hr {
         width: 900px;
     }
 
-    .project__right--img-detail>div{
+    .project__right--img-detail>div {
         height: 350px !important;
     }
-    
+
     .project__right--img-detail-content {
         display: none;
     }
 
-    .project__right--img-detail-header .project__right--img-detail--title{
+    .project__right--img-detail-header .project__right--img-detail--title {
         background-color: transparent;
     }
-    
-    .project__right--img-detail>div{
+
+    .project__right--img-detail>div {
         width: 60%;
         height: 896px;
         background-color: white;
-        position: relative;
-        transform: translate(37%, 30%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    .project__right--img-detail-more{
+    .project__right--img-detail-more {
         display: block;
     }
 
@@ -2248,7 +2253,7 @@ hr {
     .project__left {
         transform: translateX(25px);
     }
-    
+
     .project__left--item {
         display: none;
     }
@@ -2261,9 +2266,9 @@ hr {
         background-color: #1d407d;
     }
 
-    .project__right {
-        /* transform: translate(15px, 120px); */
-    }
+    /* .project__right {
+        transform: translate(15px, 120px);
+    } */
 
     .project__right--img:nth-child(4) {
         margin-top: 0px;
@@ -2275,16 +2280,18 @@ hr {
         margin-top: 32px;
     }
 
-    .project__right--img-detail-header .project__right--img-detail--title{
+    .project__right--img-detail-header .project__right--img-detail--title {
         background-color: transparent;
     }
-    
-    .project__right--img-detail>div{
+
+    .project__right--img-detail>div {
         width: 60%;
         height: 896px;
         background-color: white;
-        position: relative;
-        transform: translate(37%, 30%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .project:after {
@@ -2549,13 +2556,15 @@ hr {
         margin-left: 30px;
         margin-top: 32px;
     }
-    
-    .project__right--img-detail>div{
+
+    .project__right--img-detail>div {
         width: 60%;
         height: 896px;
         background-color: white;
-        position: relative;
-        transform: translate(37%, 30%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .project:after {
@@ -2765,12 +2774,14 @@ hr {
         z-index: -1;
     }
 
-    .project__right--img-detail>div{
+    .project__right--img-detail>div {
         width: 60%;
-    height: 896px;
-    background-color: white;
-    position: relative;
-    transform: translate(37%, 30%);
+        height: 896px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .news__title:after {

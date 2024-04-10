@@ -507,6 +507,10 @@ i.fa-magnifying-glass {
         margin-left: 0px;
     }
 
+    .main__left {
+        margin-left: 0px;
+    }
+
     .main__right__content {
         width: 100%;
     }
@@ -515,17 +519,23 @@ i.fa-magnifying-glass {
         width: 100%;
     }
 
+    .footer {
+        margin-top: 50px;
+    }
+
     .footer .container .row {
         margin-top: 20px;
         transform: translateY(10px);
     }
 
     .footer__left-logo {
-        margin-left: 40px;
+        margin: 0 auto;
+        width: fit-content;
     }
 
     .footer__left-text {
         margin: 0 auto;
+        width: 100%;
     }
 
     .footer__left-text p {
@@ -536,9 +546,8 @@ i.fa-magnifying-glass {
         display: none;
     }
 
-    .foot {
-        margin-left: 20px !important;
-        margin-bottom: 0px;
+    .footer .foot {
+        margin: 40px auto !important;
     }
 }
 
@@ -568,6 +577,19 @@ i.fa-magnifying-glass {
         width: 100%;
     }
 
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer .container .row {
+        transform: translateY(35px);
+    }
+
+    .footer__left-logo {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
     .footer__left-text {
         margin: 0 auto;
     }
@@ -576,9 +598,8 @@ i.fa-magnifying-glass {
         display: none;
     }
 
-    .foot {
-        margin-left: 20px !important;
-        margin-bottom: 0px;
+    .footer .foot {
+        margin: 40px auto !important;
     }
 }
 
@@ -632,6 +653,19 @@ i.fa-magnifying-glass {
         top: 0;
     }
 
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer>.container>.row {
+        transform: translateY(35px);
+    }
+
+    .footer__left-logo {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
     .footer__left-text {
         margin: 0 auto;
     }
@@ -640,8 +674,12 @@ i.fa-magnifying-glass {
         display: none;
     }
 
+    .footer__right .roww {
+        transform: translate(0);
+    }
+
     .foot {
-        margin: 40px auto;
+        margin: 40px auto !important;
     }
 }
 
@@ -649,6 +687,14 @@ i.fa-magnifying-glass {
     .app {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .main>.container {
+        max-width: 100%;
+    }
+
+    .main__left {
+        margin-left: 0;
     }
 
     .main__right__content {
@@ -683,6 +729,19 @@ i.fa-magnifying-glass {
         top: 0;
     }
 
+    .footer {
+        margin-top: 50px;
+    }
+
+    .footer>.container>.row {
+        transform: translateY(35px);
+    }
+
+    .footer__left-logo {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
     .footer__left-text {
         margin-left: 0;
     }
@@ -691,12 +750,20 @@ i.fa-magnifying-glass {
         transform: translate(15px, 9px);
     }
 
+    .footer__right .roww {
+        transform: translate(0);
+    }
+
     .footer__right--service1 {
         display: none;
     }
 
     .footer__right--service2 {
         margin: 0 auto !important;
+    }
+
+    .footer .foot {
+        margin: 40px auto !important;
     }
 }
 
@@ -724,8 +791,25 @@ i.fa-magnifying-glass {
         transform: translateX(40px);
     }
 
+    .footer>.container>.row {
+        transform: translateY(35px);
+    }
+
+    .footer__left-logo {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .footer__left-text {
+        margin: 0 auto;
+    }
+
     .footer__right {
         transform: translate(15px, 9px);
+    }
+
+    .footer__right>.row {
+        transform: translate(0) !important;
     }
 
     .footer__right--service1 {
@@ -734,6 +818,10 @@ i.fa-magnifying-glass {
 
     .footer__right--service2 {
         margin: 0 auto !important;
+    }
+
+    .footer .foot {
+        margin: 40px auto !important;
     }
 }
 
@@ -755,6 +843,24 @@ i.fa-magnifying-glass {
     .main__right {
         transform: translateX(40px);
     }
+
+    .footer>.container>.row {
+        transform: translateY(35px);
+    }
+
+    .footer__left-logo {
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .footer__left-text {
+        margin: 0 auto;
+    }
+
+    .footer .foot {
+        margin: 40px auto !important;
+    }
+
 }
 
 @media only screen and (min-width: 1401px) and (max-width: 1899px) {
