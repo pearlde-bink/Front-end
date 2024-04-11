@@ -773,7 +773,6 @@ body {
         display: inline-block;
     }
 
-
     .info__item--logo {
         cursor: pointer;
     }
@@ -1182,18 +1181,6 @@ body {
         width: 500px;
     }
 
-    /* .address__main__form--title {
-        margin: 30px auto !important;
-        transform: translate(0);
-        width: fit-content !important;
-    }
-
-    .address__main__form--text {
-        margin: 30px auto !important;
-        transform: translate(0);
-        width: fit-content !important;
-    } */
-
     .footer .foot {
         margin: 40px auto !important;
     }
@@ -1230,16 +1217,4 @@ body {
         padding: 4px 8px 8px 8px !important;
         font-size: 16px;
     }
-
-    /* .address__main__form--title {
-        margin: 30px auto !important;
-        transform: translate(0);
-        width: fit-content !important;
-    }
-
-    .address__main__form--text {
-        margin: 30px auto !important;
-        transform: translate(0);
-        width: fit-content !important;
-    } */
 }
