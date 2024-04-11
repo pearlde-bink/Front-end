@@ -826,21 +826,27 @@ hr {
 }
 
 .project__right--img-detail-content {
-    width: 100%;
+    width: 85%;
     text-align: start;
-    margin-left: -66px;
-    margin-top: 32px;
+    transform: translate(0);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
 }
 
 .project__right--img-detail-content p {
     white-space: pre-wrap;
-    line-height: 33px;
+    line-height: 33px;width: fit-content;
+    margin: 0;
+    position: relative;
+    z-index: 20;
 }
 
 .project__right--img-detail-close {
     position: absolute;
-    right: -84px;
-    top: -76px;
+    right: -60px;
+    top: -70px;
     cursor: pointer;
 }
 
@@ -851,8 +857,8 @@ hr {
 .project__right--img-detail-close p {
     color: white;
     position: absolute;
-    top: 21%;
-    left: 43%;
+    top: 23%;
+    left: 42%;
     font-size: 32px;
 }
 
@@ -1470,6 +1476,10 @@ hr {
         padding: 0;
     }
 
+    .project__right--img:hover .project__right--img--footer{
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
     .project__right--img img {
         width: 100%;
     }
@@ -1483,8 +1493,30 @@ hr {
         width: 250px;
     }
 
+    .project__right--img-detail>div{
+        width: 85%;
+        height: fit-content;
+        background-color: white;
+        position: relative;
+    }
+    .project__right--img-detail-header .project__right--img-detail--title{
+        width: 80%;
+        height: fit-content;
+        text-align: center;
+    bottom: -30px;
+    }
+    .project__right--img-detail-header .project__right--img-detail--title h4{
+        font-size: 12px;
+        transform: translate(0);
+    }
     .project__right--img-detail-more {
         display: block;
+        text-align: center;
+        margin: 40px auto 0;
+        cursor: pointer;
+    }
+    .project__right--img-detail-content{
+        display: none;
     }
 
     .hiring {
@@ -1864,7 +1896,11 @@ hr {
         margin-left: 0;
         padding: 0;
     }
-
+    
+    .project__right--img:hover .project__right--img--footer{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
     .project__right--img img {
         width: 100%;
     }
@@ -1878,8 +1914,30 @@ hr {
         width: 350px;
     }
 
+    .project__right--img-detail>div{
+        width: 85%;
+        height: fit-content;
+        background-color: white;
+        position: relative;
+    }
+    .project__right--img-detail-header .project__right--img-detail--title{
+        width: 80%;
+        height: fit-content;
+        text-align: center;
+        bottom: -30px;
+    }
+    .project__right--img-detail-header .project__right--img-detail--title h4{
+        font-size: 12px;
+        transform: translate(0);
+    }
     .project__right--img-detail-more {
         display: block;
+        text-align: center;
+        margin: 40px auto 0;
+        cursor: pointer;
+    }
+    .project__right--img-detail-content{
+        display: none;
     }
 
     .hiring {
@@ -2244,35 +2302,43 @@ hr {
     }
 
     .project__right--img-detail>div {
-        height: 350px !important;
-        height: 896px;
+        width: 85%;
         background-color: white;
         position: relative;
-        transform: translate(37%, 30%);
     }
 
     .project__right--img-detail-content {
-        width: 90%;
-        margin-left: 30px;
-        margin-top: 32px;
+        width: fit-content;
+        position: relative;
+    }
+
+    .project__right--img-detail-content p{
+        font-size: 13px;
     }
 
     .project__right--img-detail-header .project__right--img-detail--title {
         background-color: transparent;
+        width: 360px;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title h4{
+        font-size: 20px;
+        width: fit-content;
+        transform: translateY(27px);
     }
 
     .project__right--img-detail>div {
-        width: 60%;
-        height: 896px;
+        width: 85%;
+        height: fit-content;
+        /* height: 896px; */
         background-color: white;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    .project__right--img-detail-more {
-        display: block;
+    .project__right--img-detail-header img{
+        width: 60%;
     }
 
     .hiring>.row {
@@ -2613,26 +2679,45 @@ hr {
         margin-top: 0px;
     }
 
+    .project__right--img-detail>div {
+        width: 85%;
+        background-color: white;
+        position: relative;
+    }
+
     .project__right--img-detail-content {
-        width: 90%;
-        margin-left: 30px;
-        margin-top: 32px;
+        width: fit-content;
+        position: relative;
+    }
+
+    .project__right--img-detail-content p{
+        font-size: 13px;
     }
 
     .project__right--img-detail-header .project__right--img-detail--title {
         background-color: transparent;
+        width: 360px;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title h4{
+        font-size: 20px;
+        width: fit-content;
+        transform: translateY(27px);
     }
 
     .project__right--img-detail>div {
-        width: 60%;
-        height: 896px;
+        width: 65%;
+        height: fit-content;
         background-color: white;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
+    .project__right--img-detail-header img{
+        width: 55%;
+    }
+    
     .project:after {
         right: 40px;
         z-index: -1;
@@ -2930,22 +3015,48 @@ hr {
         margin-top: 200px !important;
     }
 
+    .project__right--img-detail>div {
+        width: 85%;
+        background-color: white;
+        position: relative;
+    }
+
+    .project__right--img:nth-child(4){
+        margin-top: 0;
+    }
+
     .project__right--img-detail-content {
-        width: 90%;
-        margin-left: 30px;
-        margin-top: 32px;
+        width: fit-content;
+        position: relative;
+    }
+
+    .project__right--img-detail-content p{
+        font-size: 13px;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title {
+        background-color: transparent;
+        width: 360px;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title h4{
+        font-size: 20px;
+        width: fit-content;
+        transform: translateY(27px);
     }
 
     .project__right--img-detail>div {
-        width: 60%;
-        height: 896px;
+        width: 55%;
+        height: fit-content;
         background-color: white;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
+    .project__right--img-detail-header img{
+        width: 55%;
+    }
     .project:after {
         right: -221px;
         z-index: -1;
@@ -3154,11 +3265,33 @@ hr {
     }
 
     .project__right--img-detail>div {
-        width: 60%;
-        height: 896px;
+        width: 55%;
+        height: 82%;
         background-color: white;
         position: relative;
-        transform: translate(37%, 30%);
+    }
+
+    .project__right--img-detail-content{
+        width: 75%;
+    }
+
+    .project__right--img-detail-header img {
+        width: 50%;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title{
+        background-color: transparent;
+        left: 54%;
+        width: 400px;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title h4 {
+        font-size: 20px;
+        width: fit-content;
+        transform: translateY(27px);
+    }
+    .project__right--img-detail-content p{
+        font-size: 14px;
     }
 
     .hiring__left {
@@ -3209,6 +3342,35 @@ hr {
         right: 0px;
     }
 
+    .project__right--img-detail>div {
+        width: 55%;
+        height: 82%;
+        background-color: white;
+        position: relative;
+    }
+
+    .project__right--img-detail-content{
+        width: 60%;
+    }
+
+    .project__right--img-detail-header img {
+        width: 50%;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title{
+        background-color: transparent;
+        left: 54%;
+        width: 400px;
+    }
+
+    .project__right--img-detail-header .project__right--img-detail--title h4 {
+        font-size: 20px;
+        width: fit-content;
+        transform: translateY(27px);
+    }
+    .project__right--img-detail-content p{
+        font-size: 14px;
+    }
     .footer .container {
         height: 350px;
     }
