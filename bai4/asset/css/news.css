@@ -8,7 +8,7 @@
 
 body {
     margin: 0 auto;
-    font-family: 'utm-avo', sans-serif;
+    font-family: "Open Sans", sans-serif !important;
 }
 
 .app {
@@ -156,22 +156,24 @@ body {
 }
 
 .header__main div {
-    width: 110px;
+    width: 140px;
     margin: 0 auto;
     transform: translateY(46px);
+    text-align: center;
 }
 
 .header__main h3 {
-    font-size: 26px;
+    font-size: 25px;
     margin-top: 46px;
     margin-left: 11px;
+    transform: translateY(3px);
+    letter-spacing: 1px;
 }
 
 .header__main p {
-    margin-top: 10px;
-    font-size: 17px;
-    margin-left: -6px;
-    width: 250px;
+    margin-top: 12px;
+    font-size: 16px;
+    margin-left: 6px;
     letter-spacing: 0px;
     word-spacing: -3px;
 }
@@ -181,13 +183,17 @@ body {
     margin-top: 64px !important;
     margin-left: 47px;
 }
+.main__left .row .col-11.col-md-6{
+    padding: 0 19px;
+    transform: translateX(-5px);
+}
 
 .main__left .row .col-11.col-md-6:nth-child(2) {
-    transform: translateX(4px);
+    transform: translateX(-1px);
 }
 
 .main__post {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
 }
 
 .main__post--img {
@@ -198,11 +204,12 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transform: translateY(2px);
 }
 
 .main__post--img--calendar {
     position: absolute;
-    top: 21px;
+    top: 22px;
     left: 18px;
     width: 56px;
     height: 56px;
@@ -232,43 +239,45 @@ body {
 .main__post--date i {
     position: absolute;
     top: 5px;
-    left: 4px;
+    left: 2px;
     font-size: 12px;
 }
 
 .main__post--date p {
     font-size: 13px;
-    margin-top: 24px;
+    margin-top: 25px;
     margin-left: 21px;
-    word-spacing: 1px;
+    word-spacing: -2px;
     letter-spacing: 0px;
 }
 
 .main__post--title {
-    margin-top: -4px;
+    margin-top: -5px;
     word-spacing: 1px;
     letter-spacing: 0px;
     color: #7395e9;
 }
 
 .main__post--title h5 {
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 21px;
+    line-height: 27px;
+    word-spacing: 0px;
+    transform: translateY(1px);
 }
 
 .main__post--content {
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 14px;
     margin-left: 2px;
-    word-spacing: -1px;
+    word-spacing: 2px;
     line-height: 25px;
 }
 
 .pagination {
-    margin-top: 17px;
-    margin-bottom: 77px;
+    margin-top: 22px;
+    margin-bottom: 75px;
     height: 42px;
-    margin-left: -10px;
+    margin-left: -8px;
 }
 
 .page-item {
@@ -421,7 +430,7 @@ i.fa-magnifying-glass {
 }
 
 .footer .container .row {
-    transform: translate(-15px, 35px);
+    transform: translate(-15px, 38px);
 }
 
 .footer__left-logo {
@@ -452,7 +461,7 @@ i.fa-magnifying-glass {
 }
 
 .footer__right {
-    transform: translate(53px, 9px);
+    transform: translate(53px, 6px);
 }
 
 .footer__right--service1 a,
@@ -479,7 +488,7 @@ i.fa-magnifying-glass {
 }
 
 .footer .foot {
-    margin-top: 40px;
+    margin-top: 42px;
     width: 88%;
     height: 70px;
     background-color: #1d407d;
@@ -491,6 +500,8 @@ i.fa-magnifying-glass {
     text-align: center;
     font-size: 15.2px;
     padding-top: 18px;
+    letter-spacing: 0px;
+    word-spacing: -1px;
 }
 
 @media only screen and (max-width: 479px) {

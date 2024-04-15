@@ -8,7 +8,7 @@
 
 body {
     margin: 0 auto;
-    font-family: 'utm-avo', sans-serif;
+    font-family: "Open Sans", sans-serif !important;
 }
 
 .app {
@@ -546,6 +546,12 @@ body {
         transform: translate(-50%, 100%);
     }
 
+    .address__main__form>div button p{
+        transform: translate(0);
+        width: fit-content;
+        margin: 10px auto;
+    }
+
     .address__main__form--title {
         margin: 30px auto 0px !important;
         transform: translate(0);
@@ -694,6 +700,12 @@ body {
         transform: translate(-50%, 100%);
     }
 
+    .address__main__form>div button p{
+        transform: translate(0);
+        width: fit-content;
+        margin: 10px auto;
+    }
+
     .address__main__form--title {
         margin: 30px auto 0px !important;
         transform: translate(0);
@@ -825,6 +837,12 @@ body {
         width: 200px;
         margin-left: 50%;
         transform: translate(-50%, 100%);
+    }
+
+    .address__main__form>div button p{
+        transform: translate(0);
+        width: fit-content;
+        margin: 10px auto;
     }
 
     .address__main__form--title {
@@ -974,6 +992,12 @@ body {
         transform: translate(-50%, 100%);
     }
 
+    .address__main__form>div button p{
+        transform: translate(0);
+        width: fit-content;
+        margin: 10px auto;
+    }
+
     .address__main__form--title {
         margin: 30px auto 0px !important;
         transform: translate(0);
@@ -1108,6 +1132,12 @@ body {
         margin: 0 40px;
     }
 
+    .address__main__form>div button p{
+        transform: translate(0);
+        width: fit-content;
+        margin: 10px auto;
+    }
+
     footer>.container>.row {
         transform: translateY(35px);
     }
@@ -1177,6 +1207,12 @@ body {
         margin-right: 0px;
     }
 
+    .address__main__form>div button p{
+        transform: translate(0);
+        width: fit-content;
+        margin: 10px auto;
+    }
+
     .form .row {
         width: 500px;
     }
@@ -1216,5 +1252,11 @@ body {
         width: 115px;
         padding: 4px 8px 8px 8px !important;
         font-size: 16px;
+    }
+    
+    .address__main__form>div button p{
+        transform: translate(0);
+        width: fit-content;
+        margin: 10px auto;
     }
 }
