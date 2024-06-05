@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <h4>Your array: </h4>
+            <p id="display"></p>
+
+            <h4>New array: </h4>
+            <p id="display2"></p>
+        </div>
+        <div class="right">
+            <p class="msg"></p>
+            <button class="fill">Fill array</button>
+
+            <div>
+                <label for="multiInput">Duplicate element at position of: </label>
+                <input type="number" min="1" max="10" step="1" id="multiInput">
+                <button class="multi">Duplicate</button>
+            </div>
+
+            <div>
+                <label for="addValue">Add new element: </label>
+                <input type="text" id="addValue">
+                <button class="add">Add</button>
+            </div>
+
+            <div>
+                <label for="adjustInput">Change element at position of: </label>
+                <input type="number" min="1" max="10" step="1" id="adjustInput">
+                <label for="adjustValue">Change to: </label>
+                <input type="text" id="adjustValue">
+                <button class="adjust">Change</button>
+            </div>
+
+            <div>
+                <label for="delInput">Delete element at position of: </label>
+                <input type="number" min="1" max="10" step="1" id="delInput">
+                <button class="del">Delete</button>
+            </div>
+
+            <button class="asc">Ascendent</button>
+
+            <button class="des">Descendent</button>
+        </div>
+
+    </div>
+
+    <div class="msg">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

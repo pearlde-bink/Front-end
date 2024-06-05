@@ -834,6 +834,8 @@ hr {
     left: 50%;
     transform: translateX(-50%);
     height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .project__right--img-detail-content p {
@@ -847,8 +849,8 @@ hr {
 
 .project__right--img-detail-close {
     position: absolute;
-    right: -60px;
-    top: -70px;
+    right: -70px;
+    top: -60px;
     cursor: pointer;
 }
 
@@ -1530,6 +1532,21 @@ hr {
         display: none;
     }
 
+    .project__right--img-detail-close>div>svg {
+        height: 80px;
+        width: 80px;
+    }
+
+    .project__right--img-detail-close>div>svg>circle {
+        cx: 20;
+        cy: 40;
+    }
+
+    .project__right--img-detail-close p {
+        top: 16%;
+        left: 15%;
+    }
+
     .hiring {
         margin-top: 280px;
         margin-bottom: 100px;
@@ -1956,6 +1973,21 @@ hr {
         display: none;
     }
 
+    .project__right--img-detail-close>div>svg {
+        height: 80px;
+        width: 80px;
+    }
+
+    .project__right--img-detail-close>div>svg>circle {
+        cx: 20;
+        cy: 40;
+    }
+
+    .project__right--img-detail-close p {
+        top: 16%;
+        left: 15%;
+    }
+
     .hiring {
         margin-top: 280px;
         margin-bottom: 100px;
@@ -2358,6 +2390,21 @@ hr {
         width: 60%;
     }
 
+    .project__right--img-detail-close>div>svg {
+        height: 80px;
+        width: 80px;
+    }
+
+    .project__right--img-detail-close>div>svg>circle {
+        cx: 20;
+        cy: 40;
+    }
+
+    .project__right--img-detail-close p {
+        top: 16%;
+        left: 16%;
+    }
+
     .hiring>.row {
         margin-left: -110px;
 
@@ -2744,6 +2791,21 @@ hr {
 
     .project>.row {
         width: 900px;
+    }
+
+    .project__right--img-detail-close>div>svg {
+        height: 80px;
+        width: 80px;
+    }
+
+    .project__right--img-detail-close>div>svg>circle {
+        cx: 20;
+        cy: 40;
+    }
+
+    .project__right--img-detail-close p {
+        top: 16%;
+        left: 16%;
     }
 
     .hiring>.row {
@@ -3285,13 +3347,13 @@ hr {
         z-index: -1;
     }
 
-    .project__right--img img{
+    .project__right--img img {
         width: 100%;
     }
 
     .project__right--img-detail>div {
         width: 55%;
-        height: 82%;
+        height: 85%;
         background-color: white;
         position: relative;
     }
@@ -3370,7 +3432,7 @@ hr {
 
     .project__right--img-detail>div {
         width: 55%;
-        height: 82%;
+        height: 90%;
         background-color: white;
         position: relative;
     }
