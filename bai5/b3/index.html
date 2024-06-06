@@ -9,6 +9,148 @@
 </head>
 
 <body>
+    <h2>Student scores table</h2>
+
+    <div class="highest">
+        <div>
+            <p>Student with highest score in Maths: </p>
+            <h4 class="highestMath"></h4>
+        </div>
+
+        <div>
+            <p>Student with highest score in Literature:</p>
+            <h4 class="highestLitera"></h4>
+        </div>
+
+        <div>
+            <p>Student with highest average score:</p>
+            <h4 class="highestAvg"></h4>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <table id="myTable">
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Sex</th>
+                <th>Math</th>
+                <th>Literature</th>
+                <th>Avg</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Trần Thị B</td>
+                <td>16</td>
+                <td>Nữ</td>
+                <td>90</td>
+                <td>92</td>
+                <td>91.0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn Văn A</td>
+                <td>15</td>
+                <td>Nam</td>
+                <td>85</td>
+                <td>78</td>
+                <td>81.5</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Võ Văn E</td>
+                <td>15</td>
+                <td>Nam</td>
+                <td>70</td>
+                <td>75</td>
+                <td>72.5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Phạm Thị D</td>
+                <td>16</td>
+                <td>Nữ</td>
+                <td>88</td>
+                <td>85</td>
+                <td>86.5</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Lê Văn C</td>
+                <td>15</td>
+                <td>Nam</td>
+                <td>75</td>
+                <td>80</td>
+                <td>77.5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Hoàng Thị H</td>
+                <td>16</td>
+                <td>Nữ</td>
+                <td>85</td>
+                <td>88</td>
+                <td>86.5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Ngô Văn G</td>
+                <td>15</td>
+                <td>Nam</td>
+                <td>78</td>
+                <td>82</td>
+                <td>80.0</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Đặng Thị F</td>
+                <td>16</td>
+                <td>Nữ</td>
+                <td>95</td>
+                <td>90</td>
+                <td>92.5</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Vũ Thị K</td>
+                <td>16</td>
+                <td>Nữ</td>
+                <td>92</td>
+                <td>95</td>
+                <td>93.5</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Đỗ Văn I</td>
+                <td>15</td>
+                <td>Nam</td>
+                <td>80</td>
+                <td>77</td>
+                <td>78.5</td>
+            </tr>
+        </table>
+
+        <div class="btnDiv">
+            <button class="btn name">Sort by name</button>
+            <button class="btn math">Sort by maths</button>
+            <button class="btn litera">Sort by literature</button>
+            <button class="btn avg">Sort by avg</button>
+        </div>
+    </div>
+
+    <div class="insert">
+        <h4>Insert new student</h4>
+        <div>
+            <label for="insertName">Name: <input type="text" id="insertName"></label>
+            <label for="insertAge">Age: <input type="text" id="insertAge"></label>
+            <label for="insertSex">Sex: <input type="text" id="insertSex"></label>
+            <label for="insertMath">Math: <input type="text" id="insertMath"></label>
+            <label for="insertLitera">Literature: <input type="text" id="insertLitera"></label>
+            <button class="btnInsert">Insert</button>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>

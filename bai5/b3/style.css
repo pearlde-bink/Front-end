@@ -1,0 +1,53 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+
+    border-spacing: 0;
+    width: 90%;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    display: block;
+    margin: 30px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 150px;
+}
+
+button:hover {
+    background-color: yellow
+}
+
+.insert {
+    margin: 20px auto;
+}
+
+.highest {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
