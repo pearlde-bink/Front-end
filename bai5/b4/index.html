@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+20+Charted&display=swap"
         rel="stylesheet">
+    <!-- mathjs library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -19,70 +26,70 @@
                 <h3>Calculator</h3>
                 <div class="screen">
                     <p class="display">0</p>
-                    <p class="result">12 x 12</p>
+                    <p class="pre-display">0</p>
                 </div>
             </div>
             <div class="buttons">
                 <div class="grid-container">
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="sqrt">Sqrt</div>
+                        <div class="btnValue sqrt" onclick="getValue(event)" data-value="sqrt">Sqrt</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="%">%</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="%">%</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="pow">Pow</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="**">Pow</div>
                     </button>
                     <button class="btn grid-item" style="background-color: rgb(219, 156, 156);">
-                        <div class="btnValue" data-value="ac">AC</div>
+                        <div class="btnValue" onclick="clearCal()" data-value="ac">AC</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="7">7</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="7">7</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="8">8</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="8">8</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="9">9</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="9">9</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="x">x</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="*">x</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="4">4</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="4">4</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="5">5</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="5">5</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="6">6</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="6">6</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="/">/</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="/">/</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="1">1</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="1">1</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="2">2</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="2">2</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="3">3</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="3">3</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="-">-</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="-">-</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="0">0</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="0">0</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value=".">.</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value=".">.</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="=">=</div>
+                        <div class="btnValue" onclick="calculate()" data-value="=">=</div>
                     </button>
                     <button class="btn grid-item">
-                        <div class="btnValue" data-value="+">+</div>
+                        <div class="btnValue" onclick="getValue(event)" data-value="+">+</div>
                     </button>
                 </div>
             </div>
