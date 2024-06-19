@@ -4,6 +4,7 @@ const btnFill = document.querySelector(".fill");
 const btnLength = document.querySelector(".length");
 const btnAdd = document.querySelector(".add");
 const btnAdjust = document.querySelector(".adjust");
+const btnAdjustEach = document.querySelector(".adjustEach");
 const btnDel = document.querySelector(".del");
 const btnCap = document.querySelector(".cap");
 const btnNor = document.querySelector(".nor");
@@ -27,7 +28,6 @@ function displayMsg() {
 
   setTimeout(unDisplayMsg, 1000);
 }
-
 function unDisplayMsg() {
   msg.style.display = "none";
   console.log("un display");
@@ -80,6 +80,17 @@ btnAdd.addEventListener("click", () => {
 //adjust
 btnAdjust.addEventListener("click", () => {
   string2 = prompt("Type adjust string: ");
+  groupFunc();
+});
+
+//adjustEac
+btnAdjustEach.addEventListener("click", () => {
+  const pos = document.getElementById("adjustInput").value - 1;
+  let newVal = prompt("Type adjust string: ");
+  console.log("pos: ", pos);
+  console.log("newVal: ", newVal);
+  string2 = string2.slice(0, pos) + newVal + string2.slice(pos + 1);
+  console.log(string2);
   groupFunc();
 });
 

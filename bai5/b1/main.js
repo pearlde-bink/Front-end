@@ -85,6 +85,7 @@ function add(val) {
 // Adjust
 function adjust(pos, val) {
   array2[pos - 1] = val;
+
   groupFunc();
 }
 
